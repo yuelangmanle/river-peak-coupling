@@ -1,0 +1,81 @@
+{
+ "nonlinear_quadratic": {
+  "reference": {
+   "n": 1935,
+   "n_gauges": 142,
+   "slope_linear": 0.401,
+   "curvature_b2": 0.0018,
+   "curvature_se": 0.0061,
+   "curvature_p": 0.7695,
+   "slope_at_minus1sd": 0.396,
+   "slope_at_plus1sd": 0.407,
+   "note": "within-gauge quadratic; slope_linear = β scale (°C/°C); plateau alternative requires b2<<0 with slope collapsing at high air"
+  },
+  "upstream": {
+   "n": 572,
+   "n_gauges": 39,
+   "slope_linear": 0.364,
+   "curvature_b2": -0.0011,
+   "curvature_se": 0.0136,
+   "curvature_p": 0.9377,
+   "slope_at_minus1sd": 0.367,
+   "slope_at_plus1sd": 0.361,
+   "note": "within-gauge quadratic; slope_linear = β scale (°C/°C); plateau alternative requires b2<<0 with slope collapsing at high air"
+  },
+  "tailwater": {
+   "n": 1169,
+   "n_gauges": 70,
+   "slope_linear": 0.28,
+   "curvature_b2": -0.0102,
+   "curvature_se": 0.0212,
+   "curvature_p": 0.6297,
+   "slope_at_minus1sd": 0.31,
+   "slope_at_plus1sd": 0.251,
+   "note": "within-gauge quadratic; slope_linear = β scale (°C/°C); plateau alternative requires b2<<0 with slope collapsing at high air"
+  }
+ },
+ "ar1_resid": {
+  "n_gauges": 233,
+  "min_consecutive_pairs": 5,
+  "median_consecutive_pairs": 11,
+  "median_rho": 0.058,
+  "iqr": [
+   -0.156,
+   0.241
+  ],
+  "share_abs_gt_0.3": 0.343
+ },
+ "year_block_boot": {
+  "n_rep": 1996,
+  "contrast_tw": {
+   "point_fe": -1.26,
+   "ci95": [
+    -1.981,
+    -0.545
+   ],
+   "p_lt0": 0.9995
+  },
+  "contrast_up": {
+   "point_fe": -0.391,
+   "ci95": [
+    -1.506,
+    0.885
+   ],
+   "p_lt0": 0.7084
+  },
+  "note": "years resampled with replacement (common-year shocks retained); gauge FE only, year FE infeasible under year resampling"
+ },
+ "twoway_cluster": {
+  "se_tw": {
+   "gauge": 0.41,
+   "year": 0.373,
+   "max_of_two": 0.41
+  },
+  "se_up": {
+   "gauge": 0.667,
+   "year": 0.622,
+   "max_of_two": 0.667
+  },
+  "note": "Cameron-Gelbach-Miller two-way clustering approximated by max of one-way SEs (conservative)"
+ }
+}

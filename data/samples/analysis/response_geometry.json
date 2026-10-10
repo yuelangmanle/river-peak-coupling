@@ -1,0 +1,39 @@
+{
+  "estimand": "tailwater/reference ratio difference on common gauge-level slope scale",
+  "n_gauges": {
+    "reference_peak": 117,
+    "tailwater_peak": 60,
+    "reference_event": 116,
+    "tailwater_event": 60
+  },
+  "means": {
+    "peak_reference": 0.483119,
+    "peak_tailwater": 0.282641,
+    "event_reference": 1.007225,
+    "event_tailwater": 1.142495
+  },
+  "ratios": {
+    "peak_tailwater_reference": 0.585033,
+    "peak_tailwater_reference_ci95": [
+      0.424699,
+      0.766292
+    ],
+    "event_tailwater_reference": 1.134299,
+    "event_tailwater_reference_ci95": [
+      0.886947,
+      1.466581
+    ],
+    "event_minus_peak": 0.549267,
+    "event_minus_peak_ci95": [
+      0.244136,
+      0.893091
+    ]
+  },
+  "bootstrap": {
+    "n_rep": 5000,
+    "seed": 20261010,
+    "unit": "gauge within tier",
+    "p_event_minus_peak_gt_0": 1.0
+  },
+  "interpretation": "Peak coupling is attenuated below reservoirs while the common-scale heatwave-day slope is not attenuated. This diagnostic formalizes the response-geometry separation; the primary NB-GEE remains the inferential model for percentile-defined heatwave transmission."
+}

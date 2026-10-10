@@ -1,0 +1,90 @@
+{
+ "driver_substitution": {
+  "n_dams": 18,
+  "median_r2_storage": 0.203,
+  "median_r2_air": 0.087,
+  "share_storage_explains_more": 0.556,
+  "wilcoxon_greater_p": 0.13297,
+  "shasta_r2_storage_vs_air": null
+ },
+ "recovery": {
+  "n_primary_gauges": 60,
+  "n_sensitivity_gauges": 26,
+  "distance_bins": {
+   "primary_0_10km": {
+    "label": "0-10 km (primary)",
+    "sample_scope": "primary",
+    "distance_bounds_km": [
+     0,
+     10
+    ],
+    "lower_bound_inclusive": false,
+    "upper_bound_inclusive": true,
+    "n": 19,
+    "n_reservoirs": 15,
+    "mean_beta": 0.223,
+    "bootstrap_ci95": [
+     0.128,
+     0.314
+    ],
+    "interval_method": "reservoir-cluster percentile bootstrap"
+   },
+   "primary_10_30km": {
+    "label": "10-30 km (primary)",
+    "sample_scope": "primary",
+    "distance_bounds_km": [
+     10,
+     30
+    ],
+    "lower_bound_inclusive": false,
+    "upper_bound_inclusive": true,
+    "n": 41,
+    "n_reservoirs": 21,
+    "mean_beta": 0.31,
+    "bootstrap_ci95": [
+     0.191,
+     0.441
+    ],
+    "interval_method": "reservoir-cluster percentile bootstrap"
+   },
+   "sensitivity_30_60km": {
+    "label": "30-60 km (sensitivity)",
+    "sample_scope": "sensitivity",
+    "distance_bounds_km": [
+     30,
+     60
+    ],
+    "lower_bound_inclusive": false,
+    "upper_bound_inclusive": true,
+    "n": 26,
+    "n_reservoirs": 26,
+    "mean_beta": 0.392,
+    "bootstrap_ci95": [
+     0.283,
+     0.489
+    ],
+    "interval_method": "reservoir-cluster percentile bootstrap"
+   }
+  },
+  "note": "Gauge-level distance-bin means and percentile bootstrap intervals are descriptive; 30-60 km gauges are a sensitivity band and are kept separate from the primary 0-30 km profile."
+ },
+ "inertia_diagnostic": {
+  "amplitude_ratio_tw_over_ref": 0.585,
+  "implied_tau_days": 81.0,
+  "predicted_lag_days_if_inertia_filter": 55.0,
+  "observed_mean_lag_days": 7.1,
+  "conclusion": "a pure first-order filter calibrated to 42% attenuation implies a ~55-day phase lag, compared with an observed mean offset of ~7.1 days; this comparison is diagnostic and does not identify or rule out mechanisms"
+ },
+ "projection_plus2C": {
+  "note": "under the observed coupling, +2 degC in annual peak air temperature",
+  "peak_warming_degC": {
+   "reference": 0.97,
+   "tailwater": 0.57
+  },
+  "threshold_days_added": {
+   "reference": 6.3,
+   "tailwater": 3.5,
+   "hot_matched_reference": 12.2
+  }
+ }
+}

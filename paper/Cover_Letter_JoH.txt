@@ -1,0 +1,27 @@
+10 October 2026
+
+Dear Editor,
+
+We submit our manuscript, “Reservoir regulation rotates river thermal response geometry across a contiguous-U.S. benchmark,” for consideration by the Journal of Hydrology.
+
+River temperature responds to atmospheric heat through catchment storage, flow and river–air exchange. Reservoirs alter each of these pathways, yet their influence on annual thermal extremes is not well represented by shifts in mean or seasonal temperature. Our study asks how regulation changes the way an atmospheric peak is expressed in a river, using daily water- and air-temperature observations from 213 contiguous-U.S. gauges. The gauges form three tiers: minimally disturbed reference streams, sites above reservoirs and downstream tailwaters. This design separates the downstream reservoir signal from the broader climatic and hydrological setting.
+
+The central result is a rotation of the thermal response. Tailwater peaks track atmospheric peaks less closely, while percentile-defined heatwave transmission remains on a similar relative scale and observed warm burden is highest below reservoirs. A common-scale diagnostic places the two response dimensions on the same gauge-level footing, so the result does not depend on contrasting one significant and one non-significant interaction. Climate-position, drainage-area and flow-aware sensitivities leave the tailwater contrast in place. A storage-state panel of 18 non-Shasta reservoirs and 310 station-years further shows that a one-SD increase in within-reservoir antecedent storage lowers the annual tailwater peak by 0.334 °C. The Shasta case and multi-reservoir comparison support the same mechanism direction.
+
+The manuscript is well matched to the Journal of Hydrology through its large-sample hydrological design, daily observations, explicit flow sensitivity and management-relevant treatment of regulated river thermal state. The findings provide a quantitative basis for extending environmental-flow assessment from release volume alone to the thermal state of released water. Primary estimates and their uncertainty are reported directly.
+
+This manuscript is original, has not been published previously, and is not under consideration by another journal. All authors have read and approved the final manuscript and agree to its submission to the Journal of Hydrology. The authors declare no competing interests.
+
+Thank you for your consideration.
+
+Sincerely,
+
+Zijie Deng, PhD candidate
+Corresponding author
+Jiangxi Provincial Key Laboratory of Water Resources Allocation and Efficient Utilization
+Jiangxi University of Water Resources and Electric Power
+Nanchang, Jiangxi 330099, China
+Email: 3335196397vip@gmail.com
+
+On behalf of
+Yu Xia, Associate Professor; Jiyang Yu; and Zhenyu Liao

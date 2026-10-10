@@ -1,0 +1,119 @@
+{
+ "generated": "2026-10-10 (release audit: + response geometry, flow-aware and storage-state diagnostics)",
+ "entry_point": "code/pipeline/reproduce.py",
+ "pipeline": [
+  "test_hw_unit.py",
+  "11_panel.py",
+  "12_canonical.py",
+  "13_shasta.py",
+  "15_multidam.py",
+  "16_mechanism.py",
+  "22_sensitivity.py",
+  "27_robustness_checks.py",
+  "28_s12_fixes.py",
+  "23_routing_sensitivity.py",
+  "21_routing_verify.py",
+  "25_upstream_verify_hyrorivers.py",
+  "23b_both_sources_sensitivity.py",
+  "29_r3m1_upstream_fix.py",
+  "14_figures.py",
+  "32_area_matching.py",
+  "33_response_geometry.py",
+  "34_discharge_sensitivity.py",
+  "35_storage_state_panel.py",
+  "24_forensic_audit.py",
+  "reproduce.py",
+  "27_make_submission_materials.py"
+ ],
+ "artifacts": {
+  "annual_panel_current": {
+   "path": "data/samples/analysis/annual_panel.parquet",
+   "sha256": "46bf065605f2e609..."
+  },
+  "canonical_current": {
+   "path": "data/samples/analysis/canonical.json",
+   "sha256": "199873290f4d910e2ddcd5af00fd29cb7fd70f154394dffd7420d51ff030ea1a"
+  },
+  "ladder_current": {
+   "path": "data/samples/analysis/ladder.csv",
+   "sha256": "cf6aaa63d4311718..."
+  },
+  "attribution_current": {
+   "path": "data/samples/analysis/attribution.csv",
+   "sha256": "f7092afccde59080..."
+  },
+  "paired_current": {
+   "path": "data/samples/analysis/paired.csv",
+   "sha256": "2a605edd3152442f..."
+  },
+  "screening_table": {
+   "path": "data/samples/analysis/screening_table.csv",
+   "sha256": "3957253c5a1c0243..."
+  },
+  "shasta_annual_current": {
+   "path": "data/samples/analysis/shasta_annual.csv",
+   "sha256": "d6bd3ad1f1b8df3f..."
+  },
+  "shasta_numbers_current": {
+   "path": "data/samples/analysis/shasta_numbers.json",
+   "sha256": "df51a27940a22672..."
+  },
+  "multidam_results": {
+   "path": "data/samples/analysis/multidam_results.csv",
+   "sha256": "ec09d2e9544ba6cb480ec3220d03456d555bd837b3e3c79d6023984a89e660c1"
+  },
+  "multidam_block": {
+   "path": "data/samples/analysis/multidam_block.json",
+   "sha256": "cffde4dabaa6b325b4a147d2036b9ffb46197fda9ae262aa02d89f1872e9e956"
+  },
+  "mechanism_current": {
+   "path": "data/samples/analysis/mechanism.json",
+   "sha256": "07783c4779af3a9f0884d9d28f91f0ee3a4c2a1af521dbe350d5d6135495b87b"
+  },
+  "sensitivity": {
+   "path": "data/samples/analysis/sensitivity.json",
+   "sha256": "acd82e06a827d9d5..."
+  },
+  "routing_verification": {
+   "path": "data/samples/analysis/routing_verification.csv",
+   "sha256": "8e8e0ce245aa444c..."
+  },
+  "routing_hyrorivers": {
+   "path": "data/samples/analysis/routing_verification_hyrorivers.csv",
+   "sha256": "f5a2954ba1cbd16c..."
+  },
+  "gauge_eligibility": {
+   "path": "data/samples/analysis/gauge_eligibility.csv",
+   "sha256": "6b31c827e3428ae1..."
+  },
+  "site_drainage_area": {
+   "path": "data/samples/analysis/site_drainage_area.csv",
+   "note": "285 gauges: GAGES-II DRAIN_SQKM (reference) + NWIS drain_sqmi (tailwater/upstream)"
+  },
+  "response_geometry": {
+   "path": "data/samples/analysis/response_geometry.json",
+   "sha256": "24b32b308313c487f2d82a8e54c3a8d904cbbceba6d53bd0ddc83b966524042d"
+  },
+  "response_geometry_gauge": {
+   "path": "data/samples/analysis/response_geometry_gauge.csv",
+   "sha256": "0c317a2a74179f4ee57c8c181bce77b25b74858e21c010d597705bfcf9e9699e"
+  },
+  "discharge_peak_window": {
+   "path": "data/samples/analysis/discharge_peak_window.csv",
+   "sha256": "0786881485f2805965d30aa737e83c4bcae42761c1aa259a4e1b67fc58c2b246"
+  },
+  "discharge_sensitivity": {
+   "path": "data/samples/analysis/discharge_sensitivity.json",
+   "sha256": "c12131d971a5e64e3b733988d94c7e39a9e2d3132188f6ab17b421503b0de818"
+  },
+  "storage_peak_panel": {
+   "path": "data/samples/analysis/storage_peak_panel.csv",
+   "sha256": "ca434d74bad9fe3ee77ff3b740abf63896768b4d8b4a04e4a7716311da334e10"
+  },
+  "storage_state_panel": {
+   "path": "data/samples/analysis/storage_state_panel.json",
+   "sha256": "eb005beaf234d235c7c655ecd1e4b91ce660be8f68f0c9d8b007452ee8b8493f"
+  }
+ },
+ "claims_note": "Every reported statistic traces to canonical.json (the audited registry); this file records pipeline membership and artifact hashes only. Auditor: 24_forensic_audit.py (traceability gate + logic gate)."
+}

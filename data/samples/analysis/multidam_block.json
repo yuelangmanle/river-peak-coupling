@@ -1,0 +1,43 @@
+{
+ "n_dams_total": 18,
+ "median_years_per_dam": 16.0,
+ "depth_range": [
+  0.1,
+  60.1
+ ],
+ "pooled": {
+  "weighted_mean_rS_partial": -0.194,
+  "heterogeneity_I2_pct": 73.5,
+  "share_abs_rS_gt_0.5": 0.389,
+  "share_negative_rS": 0.667
+ },
+ "depth_moderation": {
+  "slope_zS_per_m": -0.006,
+  "p_depth": 0.41035,
+  "slope_zS_per_m_control_logcap": -0.0044,
+  "p_depth_control_logcap": 0.63003,
+  "deep_ge20m": {
+   "n": 9,
+   "median_rS": -0.125,
+   "share_abs_gt_0.5": 0.222
+  },
+  "shallow_lt20m": {
+   "n": 9,
+   "median_rS": -0.228,
+   "share_abs_gt_0.5": 0.556
+  },
+  "mwu_deep_below_shallow_p": 0.4648
+ },
+ "tradeoff": {
+  "r_zS_zA_across_dams": -0.017,
+  "p": 0.94551
+ },
+ "shasta_check": {
+  "rS_partial": null,
+  "note": "current bivariate r(peak-30d)=-0.749; partial controlling air expected weaker"
+ },
+ "gate": {
+  "deep_share_abs_rS_gt_0.5": 0.222,
+  "verdict": "NULL: measurement-gap framing stands"
+ }
+}

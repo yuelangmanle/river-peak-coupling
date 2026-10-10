@@ -1,0 +1,19 @@
+dam_id,dam_name,site,n_years,r2_storage,r2_air,storage_wins
+1184,Lake Worth Dam,08048000,10,0.158,0.035,True
+1188,Mountain Creek Dam,08049500,27,0.001,0.442,False
+1220,Bardwell Lake,08062500,23,0.258,0.344,False
+1261,Houston County Lake Dam,08065350,19,0.08,0.04,True
+1295,Conroe Dam,08068400,15,0.139,0.087,True
+1300,Lake Houston Dam,08070200,15,0.13,0.302,False
+1317,Wesley E. Seale Dam,08211200,12,0.362,0.43,False
+1761,John H. Kerr Dam,02079500,13,0.322,0.026,True
+180,Warm Springs Dam,11467000,18,0.106,0.441,False
+182,Folsom,11446980,20,0.66,0.032,True
+203,Farmington Dam,11303000,21,0.0,0.0,False
+210,Don Pedro,11289650,27,0.247,0.001,True
+2183,Cambridge Reservoir Dam,01104430,13,0.376,0.196,True
+42,Diablo,12181000,28,0.005,0.088,False
+59,Lake Tapps Dike 2-B,12100490,10,0.687,0.505,True
+72,Scoggins Reservoir,453004122510301,17,0.127,0.205,False
+83,Green Peter,14186200,10,0.574,0.003,True
+92,Fall Creek,14152000,12,0.601,0.032,True

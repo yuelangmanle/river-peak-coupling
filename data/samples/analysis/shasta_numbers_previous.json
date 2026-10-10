@@ -1,0 +1,101 @@
+{
+ "n_years": 19,
+ "period": "2006-2024",
+ "site": "Sacramento River below Keswick Dam (KWK; ~13 km below Shasta Dam)",
+ "note": "1997 TCD breakpoint infeasible: NWIS dv temp ends 1983-09; CBR/SacPAS begins 2006",
+ "A_mwmt7_storage_interaction": {
+  "air_slope": -0.0524,
+  "air_slope_p": 0.72817,
+  "interaction_coef_per_maf": 0.0321,
+  "interaction_p": 0.86097,
+  "r2": 0.88,
+  "n": 19
+ },
+ "A_air_vs_storage": {
+  "r_water_air": 0.229,
+  "p_water_air": 0.3457,
+  "slope_water_air": 0.2158,
+  "p_slope_water_air": 0.3457,
+  "r_water_storage": -0.937,
+  "p_water_storage": 0.0,
+  "slope_water_storage": -1.5749,
+  "p_slope_water_storage": 0.0,
+  "r2_air_only": 0.052,
+  "r2_storage_only": 0.878,
+  "storage_coef_in_both": -1.5924,
+  "storage_p_in_both": 0.0,
+  "air_coef_in_both": -0.0349,
+  "air_p_in_both": 0.556605
+ },
+ "A_split_by_storage": {
+  "high_storage": {
+   "n": 10,
+   "beta": 0.131,
+   "mean_storage_maf": 3.062
+  },
+  "low_storage": {
+   "n": 9,
+   "beta": 0.28,
+   "mean_storage_maf": 1.613
+  }
+ },
+ "B_drought_residual": {
+  "reference_years": [
+   2006,
+   2007,
+   2008,
+   2009,
+   2010,
+   2011,
+   2012,
+   2013,
+   2016,
+   2017,
+   2018,
+   2019,
+   2020,
+   2023,
+   2024
+  ],
+  "residuals_by_year": {
+   "2006": -0.68,
+   "2007": 1.04,
+   "2008": 1.92,
+   "2009": 1.75,
+   "2010": -0.57,
+   "2011": -0.62,
+   "2012": -0.06,
+   "2013": 0.23,
+   "2014": 3.8,
+   "2015": 1.29,
+   "2016": -0.17,
+   "2017": -0.86,
+   "2018": 0.06,
+   "2019": -0.56,
+   "2020": 0.37,
+   "2021": 2.81,
+   "2022": 1.19,
+   "2023": -1.11,
+   "2024": -0.76
+  },
+  "mean_abs_resid_reference": 0.718,
+  "air_slope_reference": 0.139,
+  "air_slope_p": 0.40779
+ },
+ "C_sept_storage_interaction": {
+  "air_slope": 0.0007,
+  "interaction_coef_per_maf": -0.0864,
+  "interaction_p": 0.27462,
+  "n": 19
+ },
+ "C_sept_simple": {
+  "beta": 0.102,
+  "p": 0.52615,
+  "r2": 0.024
+ },
+ "D_summer_storage_interaction": {
+  "air_slope": 0.1357,
+  "interaction_coef_per_maf": -0.0401,
+  "interaction_p": 0.44288
+ }
+}

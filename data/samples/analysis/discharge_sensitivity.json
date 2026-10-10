@@ -1,0 +1,83 @@
+{
+  "source": {
+    "provider": "USGS NWIS daily values",
+    "parameter": "00060",
+    "statistic": "00003 (mean)",
+    "window": "trailing seven days ending on the annual AMWT7 end date",
+    "minimum_valid_days": 5,
+    "retrieval_date": "2026-10-10"
+  },
+  "sample": {
+    "n_rows": 2841,
+    "n_sites": 202,
+    "n_sites_by_tier": {
+      "reference": 138,
+      "tailwater": 45,
+      "upstream": 19
+    },
+    "rows_by_tier": {
+      "reference": 1843,
+      "tailwater": 708,
+      "upstream": 290
+    }
+  },
+  "models": {
+    "q_complete_unadjusted": {
+      "formula": "water_mwmt7 ~ air_c10*C(tier)",
+      "with_flow": false,
+      "n_rows": 2841,
+      "n_sites": 202,
+      "n_sites_by_tier": {
+        "reference": 138,
+        "tailwater": 45,
+        "upstream": 19
+      },
+      "reference_slope_degC_per_degC": 0.462031,
+      "reference_slope_ci95": [
+        0.417117,
+        0.506945
+      ],
+      "tailwater_slope_degC_per_degC": 0.304976,
+      "tailwater_slope_ci95": [
+        0.229865,
+        0.380087
+      ],
+      "tailwater_minus_reference_degC_per_degC": -0.157055,
+      "tailwater_minus_reference_ci95": [
+        -0.243785,
+        -0.070325
+      ],
+      "tailwater_minus_reference_p": 0.0003863,
+      "converged": true
+    },
+    "flow_adjusted": {
+      "formula": "water_mwmt7 ~ air_c10*C(tier) + log_q_c*C(tier)",
+      "with_flow": true,
+      "n_rows": 2841,
+      "n_sites": 202,
+      "n_sites_by_tier": {
+        "reference": 138,
+        "tailwater": 45,
+        "upstream": 19
+      },
+      "reference_slope_degC_per_degC": 0.427173,
+      "reference_slope_ci95": [
+        0.38214,
+        0.472206
+      ],
+      "tailwater_slope_degC_per_degC": 0.253859,
+      "tailwater_slope_ci95": [
+        0.178646,
+        0.329073
+      ],
+      "tailwater_minus_reference_degC_per_degC": -0.173314,
+      "tailwater_minus_reference_ci95": [
+        -0.260417,
+        -0.086211
+      ],
+      "tailwater_minus_reference_p": 9.622e-05,
+      "converged": true
+    }
+  },
+  "interpretation": "The flow-aware model is a sensitivity analysis on the subset with an observed peak-window discharge. It tests persistence of the tier contrast and is not interpreted as a causal mediation estimate."
+}

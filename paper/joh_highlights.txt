@@ -1,0 +1,5 @@
+A contiguous-U.S. benchmark defines river thermal response with three coordinates.
+Reservoir regulation rotates response geometry across peaks, events and burden.
+Flow-aware sensitivity retains the tailwater contrast across 2,841 gauge-years.
+Tailwater stations show the highest observed warm burden in the national sample.
+Antecedent storage lowers annual tailwater peaks in an 18-reservoir panel.
