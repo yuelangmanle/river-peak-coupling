@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.DS_Store
+data/cache/
+data/raw/gages2/
+data/raw/gdw/
+data/raw/hyrorivers_na/
+data/raw/resopsus_ts/
+data/raw/shasta/
+*.log
+paper/.docx_build/
+paper/Declaration_of_Competing_Interests_draft.*
+paper/Declaration_of_competing_interests_draft.*

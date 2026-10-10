@@ -1,0 +1,55 @@
+# v4 管线配置 — 全部阈值与口径的单一来源
+# 冻结依据: docs/22-预注册分析计划.md
+
+paths:
+  raw: data/raw
+  cache: data/cache
+  out: data/samples/analysis
+  figures: figures
+  notes: docs/notes
+
+data:
+  resopsus_n: 678            # ResOpsUS v2 数据文件实际行数
+  water_start: 1985
+  water_end: 2025
+  air_start: 1985
+  air_end: 2024              # Daymet 上限; 水温分析止于 2024
+  dv_dirs:                   # DV 日值来源目录(相对 data/raw)
+    - nwis_dv
+    - nwis_dv_new
+    - nwis_dv_mid
+    - nwis_dv_ref
+
+quality:
+  min_overlap_years: 8       # 水温-气温重叠年下限(统一, 废除10年分支)
+  summer_months: [6, 7, 8]
+  summer_days: 92
+  summer_complete_frac: 0.90
+  min_complete_summers: 5
+  min_consecutive_summers: 3
+
+heatwave:
+  pctl: 90
+  window: 5                  # ±5 日历日
+  min_run: 5
+  gap_tolerance: 2           # Hobday 容差(主定义)
+  baseline: [1996, 2021]
+
+exposure:
+  threshold_c: 22
+
+tiers:
+  tailwater_max_km: 30       # 主样本口径
+  upstream_max_km: 50
+  sensitivity_max_km: 60     # 扩展样本仅进敏感性
+
+attribution:
+  log_cap_cap: 50            # capacity ratio 上限截断
+  use_elec_main: "Main"      # GDW 字段值→发电主用途
+  use_elec_sec: "Sec"
+  bootstrap_n: 1000
+  bootstrap_unit: reservoir
+
+model:
+  center_air: true
+  random_slopes: true        # (1+air|gauge); 不收敛时降级(1|gauge)+披露

@@ -1,0 +1,39 @@
+{
+ "counts": {
+  "tw_verified": 70,
+  "tw_fail": 125,
+  "tw_unresolved": 2,
+  "up_verified": 5,
+  "up_fail": 19,
+  "up_unresolved": 31
+ },
+ "twostage_verified_only": {
+  "tiers": {
+   "reference": {
+    "n": 117,
+    "mean": 0.483,
+    "median": 0.436
+   },
+   "upstream": {
+    "n": 25,
+    "mean": 0.579,
+    "median": 0.578
+   },
+   "tailwater": {
+    "n": 24,
+    "mean": 0.175,
+    "median": 0.181
+   }
+  },
+  "tw_lt_ref_p": 5.218385254568011e-06,
+  "ratio_tw_ref": 0.362
+ },
+ "M1_verified_only": {
+  "n_gauges": 196,
+  "n_obs": 2800,
+  "beta_reference": 4.546,
+  "beta_tailwater": 2.249,
+  "contrast_tw_se": 0.54,
+  "contrast_tw_p": 2.1052725694415453e-05
+ }
+}

@@ -1,0 +1,1 @@
+{"mean_diff": -0.272, "ci95": [-0.357, -0.187], "p_direction": 1.0, "n_boot": 2000, "note": "P(tailwater mean beta < reference mean beta) across 2000 reservoir-level bootstrap resamples"}

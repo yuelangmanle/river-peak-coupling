@@ -1,0 +1,1697 @@
+{
+ "model_extras": {
+  "mean_r2": {
+   "reference": 0.364,
+   "upstream": 0.368,
+   "tailwater": 0.234
+  },
+  "js_restricted": {
+   "reference": {
+    "n": 117,
+    "mean": 0.483
+   },
+   "upstream": {
+    "n": 34,
+    "mean": 0.506
+   },
+   "tailwater": {
+    "n": 53,
+    "mean": 0.305
+   }
+  },
+  "r_ge_03": {
+   "reference": {
+    "n": 96,
+    "mean": 0.568
+   },
+   "upstream": {
+    "n": 30,
+    "mean": 0.548
+   },
+   "tailwater": {
+    "n": 41,
+    "mean": 0.393
+   }
+  },
+  "beta_le0_share": {
+   "reference": 0.034,
+   "upstream": 0.111,
+   "tailwater": 0.133
+  },
+  "n_per_tier": {
+   "reference": 117,
+   "upstream": 36,
+   "tailwater": 60
+  },
+  "attenuation_frac": 0.415
+ },
+ "sample": {
+  "n_reference": 117,
+  "n_upstream": 36,
+  "n_tailwater_primary": 60,
+  "n_tailwater_band": 33,
+  "n_gauges_primary": 213,
+  "n_obs_primary": 4546,
+  "n_obs_primary_D22": 3676,
+  "n_obs_primary_hw": 3666,
+  "n_reservoirs_primary": 33,
+  "n_rows_primary_note": "primary annual panel rows=4546; rows with D22=3676; rows with heatwave metrics=3666. Counts are regenerated from the current panel and coverage rules."
+ },
+ "two_stage_primary": {
+  "label": "primary",
+  "n": {
+   "reference": 117,
+   "upstream": 36,
+   "tailwater": 60
+  },
+  "mean": {
+   "reference": 0.4831,
+   "upstream": 0.4602,
+   "tailwater": 0.2826
+  },
+  "median": {
+   "reference": 0.4357,
+   "upstream": 0.5116,
+   "tailwater": 0.2585
+  },
+  "sd": {
+   "reference": 0.3172,
+   "upstream": 0.3855,
+   "tailwater": 0.2927
+  },
+  "mwu": {
+   "tw_lt_ref_p": 1.0979126422429423e-05,
+   "tw_lt_up_p": 0.004367022806939854,
+   "up_eq_ref_p_two_sided": 0.868475805015416
+  },
+  "holm": {
+   "tw_lt_ref": 3.293737926728827e-05,
+   "tw_lt_up": 0.008734045613879709,
+   "up_eq_ref": 0.868475805015416
+  },
+  "ratio_tw_ref_mean": 0.585
+ },
+ "band_only_tailwater": {
+  "n": 26,
+  "mean": 0.3922,
+  "median": 0.4218,
+  "vs_ref_p_less": 0.24072678589628982
+ },
+ "two_stage_pooled_sensitivity": {
+  "mean": {
+   "reference": 0.4831,
+   "upstream": 0.4602,
+   "tailwater": 0.3158
+  },
+  "mwu": {
+   "tw_lt_ref_p": 0.000137547620978148,
+   "tw_lt_up_p": 0.012280867248754698,
+   "up_eq_ref_p_two_sided": 0.868475805015416
+  }
+ },
+ "reservoir_level_twostage": {
+  "n_dams": 30,
+  "mean_beta_dams": 0.2634,
+  "vs_ref_p_less": 6.84347329042981e-05
+ },
+ "beta_le0": {
+  "n": 8,
+  "share": 0.133,
+  "mean_all": 0.2826,
+  "mean_excluding": 0.343,
+  "vs_ref_p_after_exclusion": 0.000985582518192741,
+  "share_reference": 0.034,
+  "share_upstream": 0.111
+ },
+ "FD_beta": {
+  "n": {
+   "reference": 118,
+   "upstream": 37,
+   "tailwater": 64
+  },
+  "mean": {
+   "reference": 0.4635,
+   "upstream": 0.41,
+   "tailwater": 0.2242
+  },
+  "median": {
+   "reference": 0.4186,
+   "upstream": 0.2543,
+   "tailwater": 0.1732
+  },
+  "mwu": {
+   "tw_lt_ref_p": 3.539599521717868e-05,
+   "tw_lt_up_p": 0.010886564135913487,
+   "up_eq_ref_p_two_sided": 0.40473442216006017
+  },
+  "holm": {
+   "tw_lt_ref": 0.00010618798565153605,
+   "tw_lt_up": 0.021773128271826973,
+   "up_eq_ref": 0.40473442216006017
+  },
+  "ratio_tw_ref": 0.484
+ },
+ "M1_mixed": {
+  "note": "random slopes converged (lbfgs, air_c/10)",
+  "beta_reference": 4.532,
+  "ci_reference": [
+   4.068,
+   4.995
+  ],
+  "beta_upstream": 4.163,
+  "ci_upstream": [
+   3.258,
+   5.068
+  ],
+  "beta_tailwater": 3.1,
+  "ci_tailwater": [
+   2.463,
+   3.737
+  ],
+  "contrast_tw_vs_ref": {
+   "coef": -1.432,
+   "se": 0.399,
+   "ci95": [
+    -0.221,
+    -0.065
+   ],
+   "p": 0.00032804362216898704
+  },
+  "contrast_up_vs_ref": {
+   "coef": -0.369,
+   "se": 0.515,
+   "p": 0.4736262948616454
+  },
+  "n_gauges": 251,
+  "n_obs": 3676,
+  "converged": true,
+  "mde_up_vs_ref_80pct": 1.442,
+  "mde_up_vs_ref_80pct_beta_scale": 0.144
+ },
+ "bootstrap": {
+  "conditional": {
+   "mean_diff": -0.202,
+   "ci95": [
+    -0.3,
+    -0.107
+   ],
+   "p_direction": 1.0,
+   "note": "reservoir-level tw, ref/up held fixed (conditional on observed comparison tiers)"
+  },
+  "joint": {
+   "mean_diff": -0.202,
+   "ci95": [
+    -0.318,
+    -0.09
+   ],
+   "p_direction": 1.0,
+   "note": "tw by reservoir AND ref/up by gauge resampled (joint interval for two-stage mean difference)"
+  },
+  "joint_tw_vs_up": {
+   "mean_diff": -0.178,
+   "ci95": [
+    -0.336,
+    -0.016
+   ],
+   "p_direction": 0.9865,
+   "note": "tailwater by reservoir and upstream by gauge resampled"
+  },
+  "tw_vs_up_conditional": {
+   "mean_diff": -0.179,
+   "ci95": [
+    -0.277,
+    -0.084
+   ]
+  },
+  "n_rep_per_design": 2000,
+  "interval_type": "percentile"
+ },
+ "M2_weighted": {
+  "reference": 0.371,
+  "upstream": 0.303,
+  "tailwater": 0.273
+ },
+ "M2_weighted_sensitivity_band": {
+  "tailwater": 0.433,
+  "n_gauges": 26,
+  "note": "separate 30-60 km sensitivity-band estimate; excluded from primary M2"
+ },
+ "RMA_beta": {
+  "reference": {
+   "mean": 0.859,
+   "median": 0.808,
+   "n": 117,
+   "n_absr_lt_0.1": 8
+  },
+  "upstream": {
+   "mean": 0.688,
+   "median": 0.765,
+   "n": 36,
+   "n_absr_lt_0.1": 1
+  },
+  "tailwater": {
+   "mean": 0.534,
+   "median": 0.571,
+   "n": 60,
+   "n_absr_lt_0.1": 9
+  },
+  "tw_lt_ref_p": 0.0003885967879107536,
+  "note": "RMA = beta/|r| (sign self-consistent); n with |r|<0.1 reported per tier; excluding them does not change ordering (checked)"
+ },
+ "variance_check": {
+  "reference": {
+   "mean_within_sd_air": 1.537,
+   "mean_within_sd_water": 1.228,
+   "mean_air_mwmt7": 31.21,
+   "mean_air_mwmt7_gaugeavg": 31.24
+  },
+  "upstream": {
+   "mean_within_sd_air": 1.381,
+   "mean_within_sd_water": 1.092,
+   "mean_air_mwmt7": 34.29,
+   "mean_air_mwmt7_gaugeavg": 33.79
+  },
+  "tailwater": {
+   "mean_within_sd_air": 1.424,
+   "mean_within_sd_water": 1.124,
+   "mean_air_mwmt7": 35.34,
+   "mean_air_mwmt7_gaugeavg": 35.04
+  }
+ },
+ "matched_beta": {
+  "n_pairs": 49,
+  "n_reference_candidates": 117,
+  "n_tailwater_candidates": 60,
+  "mean_beta_ref": 0.504,
+  "mean_beta_tw": 0.312,
+  "wilcoxon_tw_lt_ref_p": 0.002491,
+  "note": "one-to-one nearest climate-position matching after excluding gauges without estimable beta",
+  "wilcoxon_note": "Wilcoxon test uses the complete one-to-one matched pairs recorded in matched_pairs_beta.csv."
+ },
+ "beta_climate_adjusted": {
+  "tw_coef": -0.1461,
+  "tw_p": 0.00558077
+ },
+ "beta_hw": {
+  "nb_gee": {
+   "alpha": 1.0,
+   "cov_struct": "independent",
+   "log_slope_reference": 0.0414,
+   "log_slope_upstream": 0.0422,
+   "log_slope_tailwater": 0.0442,
+   "slope_ratio_tw_vs_ref": 1.003,
+   "slope_ratio_ci95": [
+    0.996,
+    1.009
+   ],
+   "p_interaction_tw_vs_ref": 0.38954,
+   "p_wald_tw_vs_up": 0.7229,
+   "p_wald_up_vs_ref": 0.8801,
+   "multiplier_ratio_at_plus29d": {
+    "value": 1.085,
+    "ci95": [
+     0.901,
+     1.306
+    ]
+   },
+   "tost_log_slope_ratio_margin_0.75_1.25": {
+    "p_lower_margin": 0.0,
+    "p_upper_margin": 0.0,
+    "p_tost": 0.0,
+    "slope_ratio_margin": [
+     0.75,
+     1.25
+    ],
+    "conclusion": "equivalent within 0.75-1.25 slope-ratio margin"
+   },
+   "n_obs": 3666,
+   "log_slope_ratio_tw_vs_ref": 1.068,
+   "transmission_multiplier_ratio_note": "slope_ratio_tw_vs_ref = exp(log_slope_tw - log_slope_ref) is the ratio of transmission multipliers, NOT the ratio of log-slopes (which is log_slope_ratio_tw_vs_ref)"
+  },
+  "per_gauge": {
+   "reference": {
+    "mean": 1.007,
+    "median": 0.895,
+    "n": 116
+   },
+   "upstream": {
+    "mean": 0.854,
+    "median": 0.895,
+    "n": 36
+   },
+   "tailwater": {
+    "mean": 1.142,
+    "median": 0.965,
+    "n": 60
+   },
+   "mwu": {
+    "tw_lt_ref_p": 0.7592196443659417,
+    "tw_lt_up_p": 0.8345942785352125
+   }
+  }
+ },
+ "exposure_thresholds": {
+  "medians": {
+   "reference": {
+    "D18": 59.5,
+    "D22": 1.5,
+    "D26": 0.0
+   },
+   "upstream": {
+    "D18": 92.0,
+    "D22": 28.0,
+    "D26": 0.0
+   },
+   "tailwater": {
+    "D18": 138.0,
+    "D22": 84.5,
+    "D26": 7.8
+   }
+  },
+  "share_any": {
+   "reference": {
+    "D18": 0.746,
+    "D22": 0.514,
+    "D26": 0.303
+   },
+   "upstream": {
+    "D18": 0.795,
+    "D22": 0.692,
+    "D26": 0.41
+   },
+   "tailwater": {
+    "D18": 0.943,
+    "D22": 0.829,
+    "D26": 0.557
+   }
+  },
+  "n": {
+   "reference": 142,
+   "upstream": 39,
+   "tailwater": 70
+  }
+ },
+ "exposure_sensitivity": {
+  "reference": {
+   "mean_unweighted": 3.162,
+   "median": 0.88,
+   "n": 117
+  },
+  "upstream": {
+   "mean_unweighted": 4.104,
+   "median": 3.25,
+   "n": 36
+  },
+  "tailwater": {
+   "mean_unweighted": 1.743,
+   "median": 0.775,
+   "n": 60
+  },
+  "diff_tw_minus_ref": -1.417,
+  "diff_ci95": [
+   -2.807,
+   -0.164
+  ],
+  "n_gauges_all_zero_D22": {
+   "reference": 51,
+   "upstream": 9,
+   "tailwater": 2
+  },
+  "nbgee_D22": {
+   "rate_ratio_tw_vs_ref_per_degree": 0.898,
+   "ci95": [
+    0.83,
+    0.971
+   ],
+   "p": 0.00694
+  }
+ },
+ "matched_exposure": {
+  "n_pairs": 57,
+  "median_D22_ref": 67.5,
+  "median_D22_tw": 64.5,
+  "wilcoxon_tw_gt_ref_p_one_sided": 0.2703,
+  "excess_reduction_frac": 1.036
+ },
+ "heat_state_matched": {
+  "n_ref_D22_ge_50": 41,
+  "mean_slope_ref_hot": 6.075,
+  "mean_slope_tailwater": 1.743,
+  "note": "reference gauges restricted to tailwater-like thermal state (median D22 >= 50 d/yr)"
+ },
+ "attribution": {
+  "n_dams": 10,
+  "n_dams_before_electricity_filter": 17,
+  "n_gauges": 21,
+  "n_state_clusters": 7,
+  "use_elec_counts_all_attributes": {
+   "Main": 257,
+   "Sec": 97,
+   "other_or_missing": 324
+  },
+  "use_elec_counts_attribution_candidates": {
+   "Main": 6,
+   "Sec": 4,
+   "excluded_other_or_missing": 7
+  },
+  "model_formula": "beta_tw ~ log_cap + outflow_cv + dam_hgt_m + use_elec_main",
+  "use_elec_note": "Main=1, Sec=0; all other or missing categories excluded from complete-case attribution model",
+  "log_cap": {
+   "coef": -0.0676,
+   "p": 0.2804
+  },
+  "outflow_cv": {
+   "coef": -0.0739,
+   "p": 0.4866
+  },
+  "dam_hgt_m": {
+   "coef": -0.0002,
+   "p": 0.9734
+  },
+  "use_elec_main": {
+   "coef": 0.3242,
+   "p": 0.0708
+  },
+  "r2": 0.4975,
+  "log_cap_boot_ci": [
+   -0.397,
+   0.114
+  ],
+  "summer_release_posthoc": {
+   "n_dams": 10,
+   "median_split": 0.152,
+   "beta_median_high": 0.301,
+   "beta_median_low": 0.217,
+   "mwu_p_two_sided": 1.0,
+   "continuous_p_all_specs": {
+    "clustered_with_logcap": 0.2776,
+    "clustered_simple": 0.0892,
+    "unclustered_with_logcap": 0.4597
+   },
+   "status": "post hoc; uncorrected; hypothesis-generating"
+  },
+  "all_specifications": [
+   {
+    "spec": "beta_tw ~ log_cap + outflow_cv + dam_hgt_m + use_elec_main",
+    "coef": "log_cap",
+    "p": 0.2804
+   },
+   {
+    "spec": "beta_tw ~ log_cap + outflow_cv + dam_hgt_m + use_elec_main",
+    "coef": "outflow_cv",
+    "p": 0.4866
+   },
+   {
+    "spec": "beta_tw ~ log_cap + outflow_cv + dam_hgt_m + use_elec_main",
+    "coef": "dam_hgt_m",
+    "p": 0.9734
+   },
+   {
+    "spec": "beta_tw ~ log_cap + outflow_cv + dam_hgt_m + use_elec_main",
+    "coef": "use_elec_main",
+    "p": 0.0708
+   },
+   {
+    "spec": "beta_tw ~ log_cap + outflow_cv + dam_hgt_m + use_elec_main + release_summer_frac",
+    "coef": "release_summer_frac",
+    "p": 0.1039
+   },
+   {
+    "spec": "beta_tw ~ log_cap + outflow_cv + dam_hgt_m + use_elec_main + storage_range_frac",
+    "coef": "storage_range_frac",
+    "p": 0.8939
+   }
+  ]
+ },
+ "src_sensitivity": {
+  "share_tmean": {
+   "reference": 0.026,
+   "upstream": 0.0,
+   "tailwater": 0.067
+  },
+  "means_excluding": {
+   "reference": 0.4835,
+   "upstream": 0.4602,
+   "tailwater": 0.2869
+  },
+  "tw_lt_ref_p_excluding": 2.5624560572737925e-05
+ },
+ "distance": {
+  "near_le10km": {
+   "n": 19,
+   "mean": 0.223
+  },
+  "mid_10_30": {
+   "n": 41,
+   "mean": 0.31
+  },
+  "near_vs_mid_p_less": 0.1868,
+  "near_vs_all_gt10_p_less": 0.1868,
+  "spearman_rho": 0.005,
+  "spearman_p": 0.9697,
+  "logdist_coef": 0.0008,
+  "logdist_p": 0.978,
+  "note": "binned contrast reported descriptively; no monotone distance claim"
+ },
+ "cascade_proxy": {
+  "n_upstream_candidates": 55,
+  "n_multi_dam_50km": 39,
+  "share_multi_dam": 0.709
+ },
+ "peak_timing": {
+  "reference": {
+   "n": 136,
+   "median_offset_d": 1.0,
+   "mean_offset_d": 0.8,
+   "share_positive": 0.618
+  },
+  "upstream": {
+   "n": 39,
+   "median_offset_d": 1.0,
+   "mean_offset_d": 4.1,
+   "share_positive": 0.564
+  },
+  "tailwater": {
+   "n": 69,
+   "median_offset_d": 1.0,
+   "mean_offset_d": 7.1,
+   "share_positive": 0.58
+  },
+  "tw_gt_ref_p": 0.07983
+ },
+ "water_sd": {
+  "reference": 1.228,
+  "upstream": 1.092,
+  "tailwater": 1.124
+ },
+ "paired": {
+  "n_systems": 3,
+  "mean_delta": -1.676,
+  "median_delta": 0.604,
+  "n_positive": 2,
+  "wilcoxon_p": null,
+  "min": -7.89,
+  "max": 2.25
+ },
+ "inference_reporting": {
+  "choice": "parallel_estimands",
+  "rule": "M1 model-based slope contrast and joint-bootstrap two-stage mean difference are reported in parallel; no contrast-p-value rule designates a primary framework."
+ },
+ "gate_G5": {
+  "two_stage_tw_lt_ref_p": 1.0979126422429423e-05,
+  "verdict": "PASS: continue main line"
+ },
+ "multidam_replication": {
+  "n_dams_total": 18,
+  "median_years_per_dam": 16.0,
+  "depth_range": [
+   0.1,
+   60.1
+  ],
+  "pooled": {
+   "weighted_mean_rS_partial": -0.194,
+   "heterogeneity_I2_pct": 73.5,
+   "share_abs_rS_gt_0.5": 0.389,
+   "share_negative_rS": 0.667
+  },
+  "depth_moderation": {
+   "slope_zS_per_m": -0.006,
+   "p_depth": 0.41035,
+   "slope_zS_per_m_control_logcap": -0.0044,
+   "p_depth_control_logcap": 0.63003,
+   "deep_ge20m": {
+    "n": 9,
+    "median_rS": -0.125,
+    "share_abs_gt_0.5": 0.222
+   },
+   "shallow_lt20m": {
+    "n": 9,
+    "median_rS": -0.228,
+    "share_abs_gt_0.5": 0.556
+   },
+   "mwu_deep_below_shallow_p": 0.4648
+  },
+  "tradeoff": {
+   "r_zS_zA_across_dams": -0.017,
+   "p": 0.94551
+  },
+  "shasta_check": {
+   "rS_partial": null,
+   "note": "current bivariate r(peak-30d)=-0.749; partial controlling air expected weaker"
+  },
+  "gate": {
+   "deep_share_abs_rS_gt_0.5": 0.222,
+   "verdict": "NULL: measurement-gap framing stands"
+  }
+ },
+ "mechanism": {
+  "driver_substitution": {
+   "n_dams": 18,
+   "median_r2_storage": 0.203,
+   "median_r2_air": 0.087,
+   "share_storage_explains_more": 0.556,
+   "wilcoxon_greater_p": 0.13297,
+   "shasta_r2_storage_vs_air": null
+  },
+  "recovery": {
+   "n_primary_gauges": 60,
+   "n_sensitivity_gauges": 26,
+   "distance_bins": {
+    "primary_0_10km": {
+     "label": "0-10 km (primary)",
+     "sample_scope": "primary",
+     "distance_bounds_km": [
+      0,
+      10
+     ],
+     "lower_bound_inclusive": false,
+     "upper_bound_inclusive": true,
+     "n": 19,
+     "n_reservoirs": 15,
+     "mean_beta": 0.223,
+     "bootstrap_ci95": [
+      0.128,
+      0.314
+     ],
+     "interval_method": "reservoir-cluster percentile bootstrap"
+    },
+    "primary_10_30km": {
+     "label": "10-30 km (primary)",
+     "sample_scope": "primary",
+     "distance_bounds_km": [
+      10,
+      30
+     ],
+     "lower_bound_inclusive": false,
+     "upper_bound_inclusive": true,
+     "n": 41,
+     "n_reservoirs": 21,
+     "mean_beta": 0.31,
+     "bootstrap_ci95": [
+      0.191,
+      0.441
+     ],
+     "interval_method": "reservoir-cluster percentile bootstrap"
+    },
+    "sensitivity_30_60km": {
+     "label": "30-60 km (sensitivity)",
+     "sample_scope": "sensitivity",
+     "distance_bounds_km": [
+      30,
+      60
+     ],
+     "lower_bound_inclusive": false,
+     "upper_bound_inclusive": true,
+     "n": 26,
+     "n_reservoirs": 26,
+     "mean_beta": 0.392,
+     "bootstrap_ci95": [
+      0.283,
+      0.489
+     ],
+     "interval_method": "reservoir-cluster percentile bootstrap"
+    }
+   },
+   "note": "Gauge-level distance-bin means and percentile bootstrap intervals are descriptive; 30-60 km gauges are a sensitivity band and are kept separate from the primary 0-30 km profile."
+  },
+  "inertia_diagnostic": {
+   "amplitude_ratio_tw_over_ref": 0.585,
+   "implied_tau_days": 81.0,
+   "predicted_lag_days_if_inertia_filter": 55.0,
+   "observed_mean_lag_days": 7.1,
+   "conclusion": "a pure first-order filter calibrated to 42% attenuation implies a ~55-day phase lag, compared with an observed mean offset of ~7.1 days; this comparison is diagnostic and does not identify or rule out mechanisms"
+  },
+  "projection_plus2C": {
+   "note": "under the observed coupling, +2 degC in annual peak air temperature",
+   "peak_warming_degC": {
+    "reference": 0.97,
+    "tailwater": 0.57
+   },
+   "threshold_days_added": {
+    "reference": 6.3,
+    "tailwater": 3.5,
+    "hot_matched_reference": 12.2
+   }
+  }
+ },
+ "sensitivity": {
+  "nonlinear_quadratic": {
+   "reference": {
+    "n": 1935,
+    "n_gauges": 142,
+    "slope_linear": 0.401,
+    "curvature_b2": 0.0018,
+    "curvature_se": 0.0061,
+    "curvature_p": 0.7695,
+    "slope_at_minus1sd": 0.396,
+    "slope_at_plus1sd": 0.407,
+    "note": "within-gauge quadratic; slope_linear = β scale (°C/°C); plateau alternative requires b2<<0 with slope collapsing at high air"
+   },
+   "upstream": {
+    "n": 572,
+    "n_gauges": 39,
+    "slope_linear": 0.364,
+    "curvature_b2": -0.0011,
+    "curvature_se": 0.0136,
+    "curvature_p": 0.9377,
+    "slope_at_minus1sd": 0.367,
+    "slope_at_plus1sd": 0.361,
+    "note": "within-gauge quadratic; slope_linear = β scale (°C/°C); plateau alternative requires b2<<0 with slope collapsing at high air"
+   },
+   "tailwater": {
+    "n": 1169,
+    "n_gauges": 70,
+    "slope_linear": 0.28,
+    "curvature_b2": -0.0102,
+    "curvature_se": 0.0212,
+    "curvature_p": 0.6297,
+    "slope_at_minus1sd": 0.31,
+    "slope_at_plus1sd": 0.251,
+    "note": "within-gauge quadratic; slope_linear = β scale (°C/°C); plateau alternative requires b2<<0 with slope collapsing at high air"
+   }
+  },
+  "ar1_resid": {
+   "n_gauges": 233,
+   "min_consecutive_pairs": 5,
+   "median_consecutive_pairs": 11,
+   "median_rho": 0.058,
+   "iqr": [
+    -0.156,
+    0.241
+   ],
+   "share_abs_gt_0.3": 0.343
+  },
+  "year_block_boot": {
+   "n_rep": 1996,
+   "contrast_tw": {
+    "point_fe": -1.26,
+    "ci95": [
+     -1.981,
+     -0.545
+    ],
+    "p_lt0": 0.9995
+   },
+   "contrast_up": {
+    "point_fe": -0.391,
+    "ci95": [
+     -1.506,
+     0.885
+    ],
+    "p_lt0": 0.7084
+   },
+   "note": "years resampled with replacement (common-year shocks retained); gauge FE only, year FE infeasible under year resampling"
+  },
+  "twoway_cluster": {
+   "se_tw": {
+    "gauge": 0.41,
+    "year": 0.373,
+    "max_of_two": 0.41
+   },
+   "se_up": {
+    "gauge": 0.667,
+    "year": 0.622,
+    "max_of_two": 0.667
+   },
+   "note": "Cameron-Gelbach-Miller two-way clustering approximated by max of one-way SEs (conservative)"
+  }
+ },
+ "registry_units": {
+  "per_degC": [
+   "two_stage_primary",
+   "FD_beta",
+   "M2_weighted",
+   "RMA_beta",
+   "bootstrap",
+   "model_extras",
+   "exposure_*",
+   "matched_beta",
+   "beta_climate_adjusted",
+   "distance",
+   "paired",
+   "both_sources_sensitivity"
+  ],
+  "per_10degC_scaled": [
+   "M1_mixed (divide by 10 for per-degC)",
+   "M1_verified_only",
+   "year_block_boot",
+   "twoway_cluster"
+  ],
+  "unitless": [
+   "beta_hw.nb_gee (log-slopes per log-count)",
+   "multidam_replication (Fisher-z partial correlations)",
+   "routing_*"
+  ],
+  "note": "M1-family coefficients are per 10 degC of air peak; divide by 10"
+ },
+ "routing_verification": {
+  "counts": {
+   "tw_verified": 70,
+   "tw_fail": 125,
+   "tw_unresolved": 2,
+   "up_verified": 5,
+   "up_fail": 19,
+   "up_unresolved": 31
+  },
+  "twostage_verified_only": {
+   "tiers": {
+    "reference": {
+     "n": 117,
+     "mean": 0.483,
+     "median": 0.436
+    },
+    "upstream": {
+     "n": 25,
+     "mean": 0.579,
+     "median": 0.578
+    },
+    "tailwater": {
+     "n": 24,
+     "mean": 0.175,
+     "median": 0.181
+    }
+   },
+   "tw_lt_ref_p": 5.218385254568011e-06,
+   "ratio_tw_ref": 0.362
+  },
+  "M1_verified_only": {
+   "n_gauges": 196,
+   "n_obs": 2800,
+   "beta_reference": 4.546,
+   "beta_tailwater": 2.249,
+   "contrast_tw_se": 0.54,
+   "contrast_tw_p": 2.1052725694415453e-05
+  },
+  "hyrorivers_crosscheck": {
+   "source": "HydroRIVERS v10 NA (independent of NHDPlus/NLDI)",
+   "caps_km": {
+    "upstream": 150.0,
+    "downstream": 60.0,
+    "snap_tol": 1.0
+   },
+   "counts": {
+    "upstream": {
+     "verified": 18,
+     "fail": 34,
+     "unsnap_or_unresolved": 3,
+     "n_pairs": 55
+    },
+    "downstream": {
+     "verified": 69,
+     "fail": 117,
+     "unsnap_or_unresolved": 11,
+     "n_pairs": 197
+    }
+   },
+   "nldi_agreement_downstream": {
+    "n_compared": 197,
+    "agree": 166,
+    "rate": 0.843
+   },
+   "groupby": {
+    "downstream|fail": 117,
+    "downstream|pass_downstream": 69,
+    "downstream|unsnap": 11,
+    "upstream|fail": 34,
+    "upstream|pass_upstream": 18,
+    "upstream|unsnap": 3
+   },
+   "both_sources_downstream_sites": [
+    "01449800",
+    "01470960",
+    "02079500",
+    "0212378405",
+    "0212880025",
+    "02138520",
+    "0214244102",
+    "0214267602",
+    "02145910",
+    "02147310",
+    "02172020",
+    "02172050",
+    "023432415",
+    "02358000",
+    "02394000",
+    "03327000",
+    "03359000",
+    "05058000",
+    "06038500",
+    "06893890",
+    "06894000",
+    "07053450",
+    "07054527",
+    "07060000",
+    "07130500",
+    "08057000",
+    "08057055",
+    "08057410",
+    "08065350",
+    "08068000",
+    "08211200",
+    "08405200",
+    "09211200",
+    "11173510",
+    "11174000",
+    "11251000",
+    "11277300",
+    "11278400",
+    "11299997",
+    "11302000",
+    "11446220",
+    "11446500",
+    "11446700",
+    "11446980",
+    "12181000",
+    "14148000",
+    "14151000",
+    "14153500",
+    "14162200",
+    "14186200",
+    "14202980",
+    "14206241",
+    "294643095035200",
+    "452731123092100"
+   ],
+   "n_both_sources_downstream": 54
+  },
+  "both_sources_sensitivity": {
+   "n_both": 54,
+   "twostage": {
+    "tiers": {
+     "reference": {
+      "n": 117,
+      "mean": 0.483
+     },
+     "upstream": {
+      "n": 36,
+      "mean": 0.46
+     },
+     "tailwater": {
+      "n": 17,
+      "mean": 0.195
+     }
+    },
+    "tw_lt_ref_p": 0.00032554314033542657
+   },
+   "M1": {
+    "n_gauges": 202,
+    "n_obs": 2885,
+    "beta_reference": 0.455,
+    "beta_tailwater": 0.24,
+    "contrast_se_beta": 0.064,
+    "contrast_p": 0.0007719735804734205
+   }
+  },
+  "verified_only_rule_note": {
+   "issue_found": "the registered twostage_verified_only upstream tier (n=24) used an asymmetric rule: tailwater required NLDI pass/near, upstream only excluded NLDI fail",
+   "upstream_rule_variants": {
+    "nldi_verified_only": {
+     "n": 5,
+     "note": "too few for a two-stage reanalysis"
+    },
+    "hyrorivers_verified_only": {
+     "n": 16,
+     "mean_beta": 0.469,
+     "vs_ref_two_sided_p": 0.559
+    },
+    "exclude_nldi_fail_original": {
+     "n": 24,
+     "status": "DEPRECATED asymmetric rule"
+    }
+   },
+   "tailwater_rule": "NLDI pass/near (70 pairs -> 24 gauges with >=8 eligible years)"
+  }
+ },
+ "storage_state_panel": {
+  "status": "post hoc",
+  "design": "one longest-record primary tailwater gauge per reservoir; >=10 complete years; within-reservoir standardized storage; reservoir fixed effects; clustered SE",
+  "primary_non_shasta": {
+   "n_years": 310,
+   "n_reservoirs": 18,
+   "median_years_per_reservoir": 16.0,
+   "storage_main": {
+    "coef": -0.334107,
+    "se": 0.146553,
+    "ci95": [
+     -0.643307,
+     -0.024908
+    ],
+    "p": 0.03580188
+   },
+   "air_peak": {
+    "coef": 0.105868,
+    "se": 0.049736,
+    "ci95": [
+     0.000934,
+     0.210802
+    ],
+    "p": 0.04820899
+   },
+   "air_x_storage": {
+    "coef": 0.01643,
+    "se": 0.062545,
+    "ci95": [
+     -0.115529,
+     0.148389
+    ],
+    "p": 0.79594412
+   }
+  },
+  "year_control": {
+   "n_years": 310,
+   "storage_main": {
+    "coef": -0.329841,
+    "se": 0.15347,
+    "ci95": [
+     -0.653634,
+     -0.006049
+    ],
+    "p": 0.04630995
+   },
+   "air_x_storage": {
+    "coef": 0.017905,
+    "se": 0.063521,
+    "ci95": [
+     -0.116112,
+     0.151922
+    ],
+    "p": 0.78144512
+   }
+  },
+  "include_shasta": {
+   "n_years": 329,
+   "n_reservoirs": 19,
+   "storage_main": {
+    "coef": -0.375253,
+    "se": 0.143544,
+    "ci95": [
+     -0.676827,
+     -0.073679
+    ],
+    "p": 0.01756629
+   },
+   "air_x_storage": {
+    "coef": 0.021239,
+    "se": 0.057981,
+    "ci95": [
+     -0.100574,
+     0.143052
+    ],
+    "p": 0.71840278
+   }
+  },
+  "leave_one_reservoir_out_interaction": {
+   "range": [
+    -0.027978,
+    0.041735
+   ],
+   "share_negative": 0.1111
+  },
+  "reservoir_bootstrap": {
+   "n_successful": 5000,
+   "storage_main": {
+    "median": -0.327764,
+    "ci95": [
+     -0.610014,
+     -0.078608
+    ],
+    "share_negative": 0.996
+   },
+   "air_x_storage": {
+    "median": 0.012567,
+    "ci95": [
+     -0.093739,
+     0.14225
+    ],
+    "share_negative": 0.4106
+   }
+  }
+ },
+ "review_checks": {
+  "coverage_sensitivity": {
+   "attrition_by_tier": {
+    "reference": {
+     "panel": 150,
+     "analyzed_8yr": 117,
+     "attrition_pct": 22.0
+    },
+    "tailwater": {
+     "panel": 71,
+     "analyzed_8yr": 60,
+     "attrition_pct": 15.5
+    },
+    "upstream": {
+     "panel": 41,
+     "analyzed_8yr": 36,
+     "attrition_pct": 12.2
+    }
+   },
+   "dropped_vs_kept_air_peak": {
+    "n_dropped_years": 870,
+    "n_kept_years": 3676,
+    "median_air_dropped": 33.14,
+    "median_air_kept": 33.31,
+    "mwu_p_two_sided": 0.0228
+   },
+   "ladder_cov75": {
+    "tiers": {
+     "reference": {
+      "n": 117,
+      "mean": 0.483
+     },
+     "upstream": {
+      "n": 36,
+      "mean": 0.46
+     },
+     "tailwater": {
+      "n": 60,
+      "mean": 0.283
+     }
+    },
+    "n_gauges": 213,
+    "tw_lt_ref_p": 1.0979126422429423e-05,
+    "ratio_tw_ref": 0.586
+   },
+   "ladder_cocurrent0": {
+    "tiers": {
+     "reference": {
+      "n": 117,
+      "mean": 0.483
+     },
+     "upstream": {
+      "n": 36,
+      "mean": 0.46
+     },
+     "tailwater": {
+      "n": 60,
+      "mean": 0.283
+     }
+    },
+    "n_gauges": 213,
+    "tw_lt_ref_p": 1.0979126422429423e-05,
+    "ratio_tw_ref": 0.586
+   },
+   "ladder_cocurrent5": {
+    "tiers": {
+     "reference": {
+      "n": 108,
+      "mean": 0.473
+     },
+     "upstream": {
+      "n": 34,
+      "mean": 0.471
+     },
+     "tailwater": {
+      "n": 58,
+      "mean": 0.303
+     }
+    },
+    "n_gauges": 200,
+    "tw_lt_ref_p": 0.00010770482869539907,
+    "ratio_tw_ref": 0.641
+   },
+   "note": "coverage rule applied by re-gating year_cov_frac on the current panel; ladder = two-stage per-gauge beta, >=8 eligible years"
+  },
+  "attribution_review_fixes": {
+   "main_spec_cluster_cis": {
+    "log_cap": {
+     "coef": -0.0676,
+     "cluster_ci95": [
+      -0.1903,
+      0.0552
+     ],
+     "p_clustered": 0.2804
+    },
+    "outflow_cv": {
+     "coef": -0.0739,
+     "cluster_ci95": [
+      -0.2822,
+      0.1344
+     ],
+     "p_clustered": 0.4866
+    },
+    "dam_hgt_m": {
+     "coef": -0.0002,
+     "cluster_ci95": [
+      -0.0101,
+      0.0098
+     ],
+     "p_clustered": 0.9734
+    },
+    "use_elec_main": {
+     "coef": 0.3242,
+     "cluster_ci95": [
+      -0.0275,
+      0.6758
+     ],
+     "p_clustered": 0.0708
+    }
+   },
+   "storage_range_detail": {
+    "n_dams": 9,
+    "coef_per_unit": 0.0001,
+    "cluster_ci95": [
+     -0.0018,
+     0.0021
+    ],
+    "p_clustered": 0.89389,
+    "note": "within-year storage range (ResOpsUS-derived, dimensionless storage_range_frac) is nominally associated with tailwater beta and survives multiplicity correction; it is an operations-intensity variable, not a static attribute"
+   },
+   "mde_note": "with 21 reservoirs and 10 state clusters, only standardized effects above ~0.5 SD are detectable at 80% power; the null is bounded, not absolute"
+  },
+  "shasta_case": {
+   "registered_from": "shasta_numbers.json (13_shasta.py) — full block now in canonical",
+   "n_years": 19,
+   "site": "Sacramento River below Keswick Dam (KWK; 13 km below Shasta Dam)",
+   "bivariate_r_storage": -0.749,
+   "dominance_lr_test": {
+    "lr_add_storage_given_air": 15.61,
+    "p_add_storage": 7.791635277913818e-05,
+    "lr_add_air_given_storage": 1.05,
+    "p_add_air": 0.30642540910515653,
+    "note": "likelihood-ratio tests on nested OLS fits, chi2(1)"
+   },
+   "air_partial_power": {
+    "n_years": 19,
+    "smallest_partial_r_detectable_at_80pct": 0.21,
+    "note": "with 19 years the air-partial null cannot exclude partial correlations up to about this size; 'no detectable contribution' is a bounded statement"
+   },
+   "variants": {
+    "peak_minus_30d_mean": {
+     "n": 19,
+     "r_water_storage": -0.748,
+     "p_water_storage": 0.00023,
+     "slope_per_MAF_HC1": -0.985,
+     "slope_ci95_HC1": [
+      -1.377,
+      -0.592
+     ],
+     "r2_bivariate": 0.56,
+     "joint_air_p_HC1": 0.2026,
+     "air_partial_r_HC1": 0.304,
+     "joint_storage_p_HC1": 1.75e-06,
+     "r_air_storage": -0.102,
+     "p_air_storage": 0.678,
+     "interaction_coef_per_MAF_per_degC": 0.0333,
+     "interaction_p_HC1": 0.8807,
+     "interaction_ci95": [
+      -0.4013,
+      0.4679
+     ],
+     "leave_one_out_r_range": [
+      -0.802,
+      -0.724
+     ]
+    },
+    "jun30": {
+     "n": 19,
+     "r_water_storage": -0.919,
+     "p_water_storage": 2.68e-08,
+     "slope_per_MAF_HC1": -1.331,
+     "slope_ci95_HC1": [
+      -1.699,
+      -0.963
+     ],
+     "r2_bivariate": 0.845,
+     "joint_air_p_HC1": 0.7915,
+     "air_partial_r_HC1": 0.066,
+     "joint_storage_p_HC1": 4.15e-11,
+     "r_air_storage": -0.233,
+     "p_air_storage": 0.336,
+     "interaction_coef_per_MAF_per_degC": 0.142,
+     "interaction_p_HC1": 0.4748,
+     "interaction_ci95": [
+      -0.2474,
+      0.5314
+     ],
+     "leave_one_out_r_range": [
+      -0.946,
+      -0.903
+     ]
+    },
+    "sep30_comparison_only": {
+     "n": 19,
+     "r_water_storage": -0.937,
+     "p_water_storage": 3.38e-09,
+     "slope_per_MAF_HC1": -1.575,
+     "slope_ci95_HC1": [
+      -1.907,
+      -1.243
+     ],
+     "r2_bivariate": 0.878,
+     "joint_air_p_HC1": 0.5566,
+     "air_partial_r_HC1": -0.145,
+     "joint_storage_p_HC1": 9.19e-17,
+     "r_air_storage": -0.281,
+     "p_air_storage": 0.244
+    }
+   },
+   "n_peaks_may": 5
+  },
+  "multidam_pooled_ci": {
+   "point_estimate_fisherz_fixed_weights": -0.189,
+   "random_effects_ci95_dl": [
+    -0.396,
+    0.037
+   ],
+   "note": "point estimate pools Fisher-z with n-3 fixed weights; the interval uses a DerSimonian-Laird random-effects variance, as annotated on Fig. 7"
+  },
+  "upstream_single_dam": {
+   "n_single_dam_candidates": 16,
+   "n_analyzed": 8,
+   "mean_beta": 0.355,
+   "vs_ref_two_sided_p": 0.2533,
+   "note": "upstream gauges with exactly one ResOpsUS dam within 50 km (station-centred criterion)"
+  }
+ },
+ "review_robustness": {
+  "shasta_power_corrected": {
+   "n_years": 19,
+   "df": 16,
+   "t_crit": 2.1199,
+   "noncentral_t_lambda": 2.9845,
+   "r_detectable_at_80pct": 0.598,
+   "monte_carlo_power": {
+    "0.21": 0.136,
+    "0.3": 0.239,
+    "0.45": 0.506,
+    "0.598": 0.813
+   },
+   "replaces": "27_review_fixes air_partial_power (normal-approximation formula, wrong by ~3x)",
+   "note": "with 19 years, partial correlations below about 0.6 remain undetectable at 80% power; the observed air partial of 0.30 (p = 0.21) is consistent with a true contribution anywhere from near zero to about 0.55"
+  },
+  "shasta_water_balance": {
+   "eta2_season_grouping": {
+    "storage": 0.496,
+    "water_peak": 0.024,
+    "note": "peak-season grouping explains about half of the storage variance but almost none of the water-peak variance; wet-vs-dry years set both storage and the peak level"
+   },
+   "window_sensitivity": {
+    "[T-30, T-1] (main)": {
+     "r": -0.748,
+     "n": 19
+    },
+    "[T-30, T] (inclusive)": {
+     "r": -0.749,
+     "n": 19
+    },
+    "[T-60, T-1] [ResOpsUS 2006-2020]": {
+     "r": -0.844,
+     "n": 15
+    },
+    "[T-90, T-1] [ResOpsUS 2006-2020]": {
+     "r": -0.88,
+     "n": 15
+    },
+    "jun30": {
+     "r": -0.919,
+     "n": 19
+    },
+    "sep30": {
+     "r": -0.937,
+     "n": 19
+    }
+   },
+   "window_sensitivity_note": "the strong negative association is not an artefact of the main window: excluding the peak day and extending to 60-90 days strengthens it",
+   "inflow_controlled": {
+    "n_years_with_inflow": 13,
+    "r_storage_peak": -0.824,
+    "r_inflow_peak": -0.573,
+    "r_storage_inflow": 0.677,
+    "partial_r_storage_given_inflow": -0.724,
+    "partial_r_inflow_given_storage": -0.034,
+    "note": "controlling antecedent inflow (n = 13; inflow missing 6 years), storage retains a strong partial association while inflow retains none — wet-cold confounding alone does not explain the storage signal"
+   }
+  },
+  "snr_gradient": {
+   "ladder_by_snr_threshold": [
+    {
+     "threshold": "|r|>=0.0 & n_years>=0",
+     "ref_mean": 0.483,
+     "n_ref": 117,
+     "tw_mean": 0.283,
+     "n_tw": 60,
+     "attenuation_pct": 41.5,
+     "mwu_p": 1.0979126422429423e-05
+    },
+    {
+     "threshold": "|r|>=0.3 & n_years>=0",
+     "ref_mean": 0.568,
+     "n_ref": 96,
+     "tw_mean": 0.393,
+     "n_tw": 41,
+     "attenuation_pct": 30.9,
+     "mwu_p": 9.409253977482364e-05
+    },
+    {
+     "threshold": "|r|>=0.4 & n_years>=0",
+     "ref_mean": 0.588,
+     "n_ref": 90,
+     "tw_mean": 0.455,
+     "n_tw": 29,
+     "attenuation_pct": 22.6,
+     "mwu_p": 0.0034475651167101672
+    },
+    {
+     "threshold": "|r|>=0.5 & n_years>=0",
+     "ref_mean": 0.64,
+     "n_ref": 73,
+     "tw_mean": 0.504,
+     "n_tw": 23,
+     "attenuation_pct": 21.2,
+     "mwu_p": 0.006399728334905504
+    },
+    {
+     "threshold": "|r|>=0.3 & n_years>=15",
+     "ref_mean": 0.451,
+     "n_ref": 37,
+     "tw_mean": 0.399,
+     "n_tw": 23,
+     "attenuation_pct": 11.4,
+     "mwu_p": 0.0786835970961074
+    },
+    {
+     "threshold": "|r|>=0.4 & n_years>=18",
+     "ref_mean": 0.409,
+     "n_ref": 22,
+     "tw_mean": 0.415,
+     "n_tw": 15,
+     "attenuation_pct": -1.6,
+     "mwu_p": 0.2242574979962838
+    }
+   ],
+   "note": "attenuation narrows from 46% over all eligible gauges to 9-18% in high-signal subsets; the direction and significance of the deficit hold at every threshold except the smallest subsample",
+   "record_length_defense": {
+    "median_years": {
+     "reference": 13.0,
+     "tailwater": 17.5,
+     "upstream": 14.0
+    },
+    "mean_abs_r": {
+     "reference": 0.552,
+     "tailwater": 0.416,
+     "upstream": 0.567
+    },
+    "corr_nyears_absr_p": {
+     "reference": 0.388,
+     "tailwater": 0.537
+    },
+    "note": "tailwater records are longer, not shorter (median 18 vs 13 years) and record length is uncorrelated with |r| in both tiers — short-series noise does not explain the tailwater slope"
+   }
+  },
+  "climate_caliper_gradient": {
+   "ladder_by_caliper": [
+    {
+     "caliper_c": 2.0,
+     "n_ref": 49,
+     "n_ref_years": 625,
+     "mixed_ref": 0.386,
+     "mixed_tw": 0.307,
+     "attenuation_pct": 20.4,
+     "mixed_p": 0.14821564516482386,
+     "twostage_ref": 0.46,
+     "twostage_tw": 0.283,
+     "twostage_mwu_p": 0.016567580016933467
+    },
+    {
+     "caliper_c": 1.5,
+     "n_ref": 40,
+     "n_ref_years": 519,
+     "mixed_ref": 0.417,
+     "mixed_tw": 0.305,
+     "attenuation_pct": 26.9,
+     "mixed_p": 0.052014996505691295,
+     "twostage_ref": 0.496,
+     "twostage_tw": 0.283,
+     "twostage_mwu_p": 0.005206268359826044
+    },
+    {
+     "caliper_c": 1.0,
+     "n_ref": 29,
+     "n_ref_years": 336,
+     "mixed_ref": 0.405,
+     "mixed_tw": 0.303,
+     "attenuation_pct": 25.3,
+     "mixed_p": 0.1314102977697555,
+     "twostage_ref": 0.486,
+     "twostage_tw": 0.283,
+     "twostage_mwu_p": 0.02165593184069353
+    },
+    {
+     "caliper_c": 0.5,
+     "n_ref": 15,
+     "n_ref_years": 170,
+     "mixed_ref": 0.334,
+     "mixed_tw": 0.3,
+     "attenuation_pct": 10.1,
+     "mixed_p": 0.6872516533108339,
+     "twostage_ref": 0.288,
+     "twostage_tw": 0.283,
+     "twostage_mwu_p": 0.3912087682314305
+    }
+   ],
+   "note": "hard caliper restriction on reference climate position shrinks the deficit from 39% to about 29% at +-1 C (two-stage p = 0.03; mixed p = 0.12 on 28 remaining reference gauges) and erases it at +-0.5 C (11 gauges). The continuous covariate adjustment over the full sample (deficit -0.18, p = 5e-4) and the hard restriction answer different questions: the latter deletes 87% of reference gauges and most of the design's power"
+  },
+  "multidam_sign_and_dl": {
+   "negative_count": "12/18",
+   "exact_binomial_p_one_sided": 0.11894,
+   "dl_ci_variants": {
+    "tau2_over_k": [
+     -0.41,
+     0.042
+    ],
+    "scaled_variance": [
+     -0.319,
+     -0.062
+    ]
+   },
+   "note": "sign prevalence and random-effects interval are reported directly; the two DerSimonian-Laird interval conventions are retained as sensitivity records"
+  },
+  "reservoir_equalweight_bootstrap": {
+   "mean_gap": -0.219,
+   "ci95": [
+    -0.302,
+    -0.116
+   ],
+   "p_lt0": 1.0,
+   "n_reservoirs": 30,
+   "note": "true reservoir-level design: tailwater gauges first averaged within each reservoir, reservoir means then resampled with equal weight; complements the gauge-weighted cluster bootstrap in the main text"
+  },
+  "M1_min8_sensitivity": {
+   "n_gauges": 213,
+   "n_obs": 3454,
+   "beta_reference": 0.446,
+   "beta_tailwater": 0.302,
+   "contrast_se": 0.042,
+   "contrast_p": 0.0005599771868369024,
+   "note": "mixed model restricted to gauges with >=8 eligible years (the two-stage gate)"
+  },
+  "huc_cluster_sensitivity": {
+   "n_huc4": 46,
+   "n_gauges_with_huc": 213,
+   "contrast_se_huc": 0.0682,
+   "contrast_coef_huc": -0.1251,
+   "contrast_p_huc": 0.07331002869729195,
+   "inference_df": 45,
+   "note": "two-stage-gate OLS with gauge FE, SE clustered by HUC4 basin unit; compare gauge-clustered SE in the main text"
+  },
+  "d26_two_conventions": {
+   "nonzero_median_convention": {
+    "reference": 0.303,
+    "upstream": 0.41,
+    "tailwater": 0.557
+   },
+   "any_eligible_year": {
+    "reference": 0.444,
+    "upstream": 0.564,
+    "tailwater": 0.743
+   }
+  },
+  "area_matching": {
+   "area_covariate_mixed": {
+    "n_gauges": 234,
+    "n_obs": 3380,
+    "beta_reference_perC": 0.458,
+    "beta_tailwater_perC": 0.303,
+    "contrast_tw_perC": -0.155,
+    "contrast_se_perC": 0.043,
+    "contrast_p": 0.0003602564871243268,
+    "log_area_coef_per_decade": 1.198,
+    "log_area_p": 7.316477917161839e-05,
+    "note": "mixed model with centered log10(drainage area km2) as covariate; log_area_c coefficient is per decade (10x) change in area"
+   },
+   "area_caliper_matching": {
+    "caliper_0.3": {
+     "n_pairs": 38,
+     "mean_ref": 0.492,
+     "mean_tw": 0.317,
+     "mean_deficit": 0.176,
+     "wilcoxon_p_one_sided": 0.0009
+    },
+    "caliper_0.5": {
+     "n_pairs": 40,
+     "mean_ref": 0.48,
+     "mean_tw": 0.32,
+     "mean_deficit": 0.16,
+     "wilcoxon_p_one_sided": 0.0017
+    },
+    "caliper_1.0": {
+     "n_pairs": 48,
+     "mean_ref": 0.458,
+     "mean_tw": 0.309,
+     "mean_deficit": 0.149,
+     "wilcoxon_p_one_sided": 0.0006
+    }
+   },
+   "area_stratified_ladder": {
+    "quartile_strata": [
+     {
+      "stratum": "Q1",
+      "area_range": "0-75",
+      "n_ref": 30,
+      "ref_beta": 0.48,
+      "n_tw": 14,
+      "tw_beta": 0.396,
+      "deficit_pct": 17.5,
+      "mwu_p": 0.18552295802741786
+     },
+     {
+      "stratum": "Q2",
+      "area_range": "75-270",
+      "n_ref": 38,
+      "ref_beta": 0.467,
+      "n_tw": 6,
+      "tw_beta": 0.622,
+      "deficit_pct": -33.2,
+      "mwu_p": 0.7427841585527349
+     },
+     {
+      "stratum": "Q3",
+      "area_range": "270-1301",
+      "n_ref": 32,
+      "ref_beta": 0.481,
+      "n_tw": 7,
+      "tw_beta": 0.292,
+      "deficit_pct": 39.2,
+      "mwu_p": 0.14362538511145323
+     },
+     {
+      "stratum": "Q4",
+      "area_range": ">1301",
+      "n_ref": 17,
+      "ref_beta": 0.528,
+      "n_tw": 25,
+      "tw_beta": 0.167,
+      "deficit_pct": 68.4,
+      "mwu_p": 6.616071638030889e-06
+     }
+    ],
+    "note": "reference/tailwater β by drainage-area quartile; GAGES-II DRAIN_SQKM + NWIS drain_sqmi"
+   },
+   "area_partial_effect": {
+    "log_area_coef": -0.0372,
+    "log_area_p": 0.1173,
+    "note": "OLS beta ~ tier + log_area_c, gauge-clustered; how much β changes per decade of area"
+   }
+  }
+ }
+}

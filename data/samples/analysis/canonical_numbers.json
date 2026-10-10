@@ -1,0 +1,441 @@
+{
+ "sample": {
+  "n_reference": 147,
+  "n_upstream": 37,
+  "n_tailwater_primary": 133,
+  "n_tailwater_band": 36,
+  "n_gauges_primary": 317,
+  "n_obs_primary": 5593,
+  "n_gauges_all": 353
+ },
+ "funnel": {
+  "n_loaded_sites": 1118,
+  "n_valid_annual": 570,
+  "n_quality_gates": 417,
+  "n_analysis": 353
+ },
+ "two_stage_primary": {
+  "label": "primary (≤30 km)",
+  "n": {
+   "reference": 147,
+   "upstream": 37,
+   "tailwater": 133
+  },
+  "mean": {
+   "reference": 0.4786,
+   "upstream": 0.4255,
+   "tailwater": 0.1938
+  },
+  "median": {
+   "reference": 0.4432,
+   "upstream": 0.46,
+   "tailwater": 0.2078
+  },
+  "sd": {
+   "reference": 0.3293,
+   "upstream": 0.3634,
+   "tailwater": 0.419
+  },
+  "mwu": {
+   "tw_lt_ref_p": 2.8735360069820867e-11,
+   "tw_lt_up_p": 0.0003677295579152508,
+   "up_eq_ref_p_two_sided": 0.4963036315636744
+  },
+  "holm": {
+   "tw_lt_ref": 8.62060802094626e-11,
+   "tw_lt_up": 0.0007354591158305016,
+   "up_eq_ref": 0.4963036315636744
+  },
+  "ratio_tw_ref_mean": 0.4049
+ },
+ "two_stage_pooled_sensitivity": {
+  "label": "pooled (≤60 km)",
+  "n": {
+   "reference": 147,
+   "upstream": 37,
+   "tailwater": 169
+  },
+  "mean": {
+   "reference": 0.4786,
+   "upstream": 0.4255,
+   "tailwater": 0.2126
+  },
+  "median": {
+   "reference": 0.4432,
+   "upstream": 0.46,
+   "tailwater": 0.2528
+  },
+  "sd": {
+   "reference": 0.3293,
+   "upstream": 0.3634,
+   "tailwater": 0.4123
+  },
+  "mwu": {
+   "tw_lt_ref_p": 1.0355747392198755e-10,
+   "tw_lt_up_p": 0.0010408902134662061,
+   "up_eq_ref_p_two_sided": 0.4963036315636744
+  },
+  "holm": {
+   "tw_lt_ref": 3.106724217659627e-10,
+   "tw_lt_up": 0.0020817804269324123,
+   "up_eq_ref": 0.4963036315636744
+  },
+  "ratio_tw_ref_mean": 0.4442
+ },
+ "band_only_tailwater": {
+  "n": 36,
+  "mean": 0.282,
+  "median": 0.3362,
+  "vs_ref_p_less": 0.005946732804730198,
+  "vs_up_p_less": 0.09932095694676002
+ },
+ "beta_le0": {
+  "share": 0.256,
+  "n": 34,
+  "mean_all": 0.1938,
+  "mean_excluding": 0.3559,
+  "vs_ref_p_after_exclusion": 0.00011098676670285208,
+  "share_reference": 0.054,
+  "share_upstream": 0.108
+ },
+ "M1_mixed": {
+  "note": "random slopes converged",
+  "beta_reference": 0.485,
+  "beta_upstream": 0.433,
+  "beta_tailwater": 0.224,
+  "ci_reference": [
+   0.267,
+   0.704
+  ],
+  "ci_upstream": [
+   -0.055,
+   0.921
+  ],
+  "ci_tailwater": [
+   -0.093,
+   0.541
+  ],
+  "contrast_tw_vs_ref": {
+   "coef": -0.262,
+   "se": 0.162,
+   "p_two_sided": 0.1054
+  },
+  "contrast_up_vs_ref": {
+   "coef": -0.052,
+   "se": 0.249,
+   "p_two_sided": 0.8333
+  },
+  "n_gauges": 317,
+  "n_obs": 5593,
+  "n_reservoirs": 72,
+  "mde_up_vs_ref_80pct": 0.697
+ },
+ "bootstrap": {
+  "n_boot": 2000,
+  "tw_vs_ref": {
+   "mean_diff": -0.285,
+   "ci95": [
+    -0.368,
+    -0.201
+   ],
+   "p_direction": 1.0
+  },
+  "tw_vs_up": {
+   "mean_diff": -0.232,
+   "ci95": [
+    -0.315,
+    -0.148
+   ],
+   "p_direction": 1.0
+  }
+ },
+ "M2_weighted": {
+  "reference": 0.36,
+  "upstream": 0.311,
+  "tailwater": 0.221
+ },
+ "FD_beta": {
+  "n": {
+   "reference": 147,
+   "upstream": 37,
+   "tailwater": 133
+  },
+  "mean": {
+   "reference": 0.482,
+   "upstream": 0.394,
+   "tailwater": 0.175
+  },
+  "median_reference": 0.429,
+  "median_upstream": 0.405,
+  "median_tailwater": 0.155,
+  "tw_lt_ref_p": 3.343936413401788e-10,
+  "tw_lt_up_p": 0.0025691403432679147,
+  "ratio_tw_ref": 0.363
+ },
+ "variance_check": {
+  "reference": {
+   "mean_within_sd_air": 1.532,
+   "mean_air_mwmt7": 31.22
+  },
+  "upstream": {
+   "mean_within_sd_air": 1.38,
+   "mean_air_mwmt7": 34.05
+  },
+  "tailwater": {
+   "mean_within_sd_air": 1.407,
+   "mean_air_mwmt7": 35.07
+  }
+ },
+ "RMA_beta": {
+  "reference": {
+   "mean": 0.803,
+   "n": 147
+  },
+  "upstream": {
+   "mean": 0.758,
+   "n": 37
+  },
+  "tailwater": {
+   "mean": 0.295,
+   "n": 133
+  },
+  "tw_lt_ref_p": 1.7362328042630963e-06
+ },
+ "beta_hw": {
+  "slopes_log": {
+   "reference": 0.0239,
+   "upstream": 0.0221,
+   "tailwater": 0.0197
+  },
+  "rate_ratio_tw_vs_ref": 0.996,
+  "rate_ratio_ci95": [
+   0.993,
+   0.998
+  ],
+  "p_tw_vs_ref": 0.0009,
+  "p_tw_vs_up": 0.352,
+  "tost_p_superiority": 0.0,
+  "tost_p_noninferiority": 0.0,
+  "tost_conclusion": "equivalent within ±25% margin (pooled GEE estimand)",
+  "n_obs": 5593,
+  "per_gauge_desc": {
+   "reference": {
+    "mean": 0.954,
+    "median": 0.947,
+    "n": 147
+   },
+   "upstream": {
+    "mean": 0.879,
+    "median": 0.846,
+    "n": 37
+   },
+   "tailwater": {
+    "mean": 0.791,
+    "median": 0.731,
+    "n": 133
+   }
+  },
+  "per_gauge_mwu": {
+   "tw_lt_ref_p": 0.007463492116619152,
+   "tw_lt_up_p": 0.11490242041464688
+  }
+ },
+ "exposure_thresholds": {
+  "medians": {
+   "reference": {
+    "D18": 60.0,
+    "D22": 2.5,
+    "D26": 0.0
+   },
+   "upstream": {
+    "D18": 87.0,
+    "D22": 26.5,
+    "D26": 0.0
+   },
+   "tailwater": {
+    "D18": 129.5,
+    "D22": 55.5,
+    "D26": 0.0
+   }
+  },
+  "share_any": {
+   "reference": {
+    "D18": 0.748,
+    "D22": 0.531,
+    "D26": 0.313
+   },
+   "upstream": {
+    "D18": 0.784,
+    "D22": 0.676,
+    "D26": 0.405
+   },
+   "tailwater": {
+    "D18": 0.857,
+    "D22": 0.714,
+    "D26": 0.496
+   }
+  },
+  "n": {
+   "reference": 147,
+   "upstream": 37,
+   "tailwater": 133
+  }
+ },
+ "exposure_sensitivity": {
+  "reference": {
+   "mean_unweighted": 3.049,
+   "median": 0.642,
+   "n": 147,
+   "n_gauges_all_zero_D22": 52
+  },
+  "upstream": {
+   "mean_unweighted": 3.096,
+   "median": 1.65,
+   "n": 37,
+   "n_gauges_all_zero_D22": 9
+  },
+  "tailwater": {
+   "mean_unweighted": 0.197,
+   "median": 0.088,
+   "n": 133,
+   "n_gauges_all_zero_D22": 13
+  },
+  "ratio_tw_vs_ref": 0.072,
+  "ratio_ci95": [
+   -0.33,
+   0.467
+  ],
+  "diff_tw_minus_ref": -2.858,
+  "diff_ci95": [
+   -4.454,
+   -1.29
+  ],
+  "nbgee_tw_rate_ratio": 0.891,
+  "nbgee_tw_ci95": [
+   0.835,
+   0.951
+  ],
+  "nbgee_p_tw": 0.0005
+ },
+ "matched_exposure": {
+  "n_pairs": 85,
+  "median_D22_ref": 35.5,
+  "median_D22_tw": 49.5,
+  "wilcoxon_tw_gt_ref_p": 0.0622,
+  "mean_air_caliper_c": 1.0,
+  "mean_D22_ref": 55.0,
+  "mean_D22_tw": 73.4,
+  "excess_reduction_frac": 0.736
+ },
+ "attribution": {
+  "n_dams": 54,
+  "n_gauges": 91,
+  "model_formula": "beta_tw ~ log_cap + outflow_cv + dam_hgt_m + use_elec_main",
+  "log_cap": {
+   "coef": 0.0023,
+   "p": 0.9404
+  },
+  "outflow_cv": {
+   "coef": 0.0647,
+   "p": 0.1369
+  },
+  "dam_hgt_m": {
+   "coef": -0.0002,
+   "p": 0.8777
+  },
+  "use_elec_main": {
+   "coef": 0.0039,
+   "p": 0.9833
+  },
+  "r2": 0.0163,
+  "log_cap_boot_ci": [
+   -0.055,
+   0.066
+  ],
+  "summer_release_posthoc": {
+   "n_dams": 54,
+   "median_split": 0.215,
+   "beta_median_high": 0.115,
+   "beta_median_low": 0.292,
+   "mwu_p_two_sided": 0.072,
+   "continuous_coef": 0.0123,
+   "continuous_p": 0.9837,
+   "status": "post hoc; uncorrected; hypothesis-generating"
+  }
+ },
+ "cascade_proxy": {
+  "n_upstream_gauges_any_dam": 55,
+  "n_multi_dam_50km": 39,
+  "share_multi_dam": 0.709
+ },
+ "paired": {
+  "n_systems": 6,
+  "mean_delta": -1.075,
+  "median_delta": -0.074,
+  "n_positive": 3,
+  "wilcoxon_p": 0.688,
+  "max_warming": {
+   "dam": "Lake Tapps Dike 2-B",
+   "delta": 2.35
+  },
+  "max_cooling": {
+   "dam": "Don Pedro",
+   "delta": -7.0
+  }
+ },
+ "matched_beta": {
+  "n_pairs": 85,
+  "median_beta_ref": 0.401,
+  "median_beta_tw": 0.256,
+  "mean_beta_ref": 0.465,
+  "mean_beta_tw": 0.229,
+  "wilcoxon_tw_lt_ref_p": 0.00024
+ },
+ "beta_climate_adjusted": {
+  "tw_coef": -0.2392,
+  "tw_p": 6e-06,
+  "air_coef": -0.01,
+  "air_p": 0.04697
+ },
+ "reservoir_level_twostage": {
+  "n_dams": 72,
+  "mean_beta_dams": 0.1482,
+  "vs_ref_p_less": 1.843349423642672e-10
+ },
+ "distance_trend": {
+  "spearman_rho": 0.016,
+  "spearman_p": 0.8526,
+  "logdist_coef": 0.0348,
+  "logdist_p": 0.2498,
+  "n": 133
+ },
+ "src_sensitivity": {
+  "share_tmean": {
+   "reference": 0.041,
+   "upstream": 0.0,
+   "tailwater": 0.075
+  },
+  "means_excluding": {
+   "reference": 0.4768,
+   "upstream": 0.4255,
+   "tailwater": 0.2121
+  },
+  "tw_lt_ref_p_excluding": 9.035711559765925e-10
+ },
+ "shasta_collinearity": {
+  "r_air_storage": -0.281,
+  "p": 0.2444,
+  "four_lowest_storage_years": [
+   2021,
+   2014,
+   2008,
+   2022
+  ],
+  "four_warmest_peak_years": [
+   2014,
+   2021,
+   2008,
+   2009
+  ]
+ }
+}

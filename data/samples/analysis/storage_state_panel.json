@@ -1,0 +1,105 @@
+{
+ "status": "post hoc",
+ "design": "one longest-record primary tailwater gauge per reservoir; >=10 complete years; within-reservoir standardized storage; reservoir fixed effects; clustered SE",
+ "primary_non_shasta": {
+  "n_years": 310,
+  "n_reservoirs": 18,
+  "median_years_per_reservoir": 16.0,
+  "storage_main": {
+   "coef": -0.334107,
+   "se": 0.146553,
+   "ci95": [
+    -0.643307,
+    -0.024908
+   ],
+   "p": 0.03580188
+  },
+  "air_peak": {
+   "coef": 0.105868,
+   "se": 0.049736,
+   "ci95": [
+    0.000934,
+    0.210802
+   ],
+   "p": 0.04820899
+  },
+  "air_x_storage": {
+   "coef": 0.01643,
+   "se": 0.062545,
+   "ci95": [
+    -0.115529,
+    0.148389
+   ],
+   "p": 0.79594412
+  }
+ },
+ "year_control": {
+  "n_years": 310,
+  "storage_main": {
+   "coef": -0.329841,
+   "se": 0.15347,
+   "ci95": [
+    -0.653634,
+    -0.006049
+   ],
+   "p": 0.04630995
+  },
+  "air_x_storage": {
+   "coef": 0.017905,
+   "se": 0.063521,
+   "ci95": [
+    -0.116112,
+    0.151922
+   ],
+   "p": 0.78144512
+  }
+ },
+ "include_shasta": {
+  "n_years": 329,
+  "n_reservoirs": 19,
+  "storage_main": {
+   "coef": -0.375253,
+   "se": 0.143544,
+   "ci95": [
+    -0.676827,
+    -0.073679
+   ],
+   "p": 0.01756629
+  },
+  "air_x_storage": {
+   "coef": 0.021239,
+   "se": 0.057981,
+   "ci95": [
+    -0.100574,
+    0.143052
+   ],
+   "p": 0.71840278
+  }
+ },
+ "leave_one_reservoir_out_interaction": {
+  "range": [
+   -0.027978,
+   0.041735
+  ],
+  "share_negative": 0.1111
+ },
+ "reservoir_bootstrap": {
+  "n_successful": 5000,
+  "storage_main": {
+   "median": -0.327764,
+   "ci95": [
+    -0.610014,
+    -0.078608
+   ],
+   "share_negative": 0.996
+  },
+  "air_x_storage": {
+   "median": 0.012567,
+   "ci95": [
+    -0.093739,
+    0.14225
+   ],
+   "share_negative": 0.4106
+  }
+ }
+}

@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+message: "If you use these materials, please cite the associated article and this repository."
+title: "Reservoir regulation rotates river thermal response geometry across a contiguous-U.S. benchmark"
+type: software
+authors:
+  - family-names: Deng
+    given-names: Zijie
+    email: 3335196397vip@gmail.com
+    affiliation: "Jiangxi University of Water Resources and Electric Power"
+  - family-names: Xia
+    given-names: Yu
+    email: 416522685@qq.com
+    affiliation: "Jiangxi University of Water Resources and Electric Power"
+  - family-names: Yu
+    given-names: Jiyang
+    email: 3488784697@qq.com
+    affiliation: "Jiangxi University of Water Resources and Electric Power"
+  - family-names: Liao
+    given-names: Zhenyu
+    email: 2187996607@qq.com
+    affiliation: "Jiangxi Normal University"
+date-released: 2026-10-10
+repository-code: "https://github.com/yuelangmanle/river-peak-coupling"
+keywords:
+  - river temperature
+  - reservoir operations
+  - heatwave exposure
+  - hydrology
+  - reproducible research

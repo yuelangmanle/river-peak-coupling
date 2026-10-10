@@ -1,0 +1,198 @@
+{
+ "n_years": 19,
+ "period": "2006-2024 (calendar years)",
+ "site": "Sacramento River below Keswick Dam (KWK; 13 km below Shasta Dam)",
+ "metric": "MWMT7 strict 7-day window (min 7 obs); peak date = window end",
+ "peak_dates": [
+  {
+   "year": 2006,
+   "water_peak": "2006-11-08",
+   "air_peak": "2006-07-28",
+   "water_mwmt7": 11.936507936507935
+  },
+  {
+   "year": 2007,
+   "water_peak": "2007-11-05",
+   "air_peak": "2007-07-10",
+   "water_mwmt7": 13.595238095238097
+  },
+  {
+   "year": 2008,
+   "water_peak": "2008-11-02",
+   "air_peak": "2008-08-16",
+   "water_mwmt7": 14.365079365079366
+  },
+  {
+   "year": 2009,
+   "water_peak": "2009-11-07",
+   "air_peak": "2009-07-20",
+   "water_mwmt7": 14.166666666666666
+  },
+  {
+   "year": 2010,
+   "water_peak": "2010-12-20",
+   "air_peak": "2010-07-20",
+   "water_mwmt7": 11.650793650793648
+  },
+  {
+   "year": 2011,
+   "water_peak": "2011-05-07",
+   "air_peak": "2011-09-10",
+   "water_mwmt7": 11.380952380952381
+  },
+  {
+   "year": 2012,
+   "water_peak": "2012-12-06",
+   "air_peak": "2012-08-14",
+   "water_mwmt7": 12.428571428571429
+  },
+  {
+   "year": 2013,
+   "water_peak": "2013-10-27",
+   "air_peak": "2013-07-04",
+   "water_mwmt7": 12.73015873015873
+  },
+  {
+   "year": 2014,
+   "water_peak": "2014-10-10",
+   "air_peak": "2014-08-01",
+   "water_mwmt7": 16.19047619047619
+  },
+  {
+   "year": 2015,
+   "water_peak": "2015-11-20",
+   "air_peak": "2015-07-01",
+   "water_mwmt7": 13.706349206349207
+  },
+  {
+   "year": 2016,
+   "water_peak": "2016-05-06",
+   "air_peak": "2016-07-30",
+   "water_mwmt7": 12.34126984126984
+  },
+  {
+   "year": 2017,
+   "water_peak": "2017-11-27",
+   "air_peak": "2017-08-03",
+   "water_mwmt7": 11.674603174603174
+  },
+  {
+   "year": 2018,
+   "water_peak": "2018-10-27",
+   "air_peak": "2018-07-20",
+   "water_mwmt7": 12.571428571428571
+  },
+  {
+   "year": 2019,
+   "water_peak": "2019-05-04",
+   "air_peak": "2019-07-28",
+   "water_mwmt7": 11.555555555555557
+  },
+  {
+   "year": 2020,
+   "water_peak": "2020-10-16",
+   "air_peak": "2020-06-27",
+   "water_mwmt7": 12.65873015873016
+  },
+  {
+   "year": 2021,
+   "water_peak": "2021-05-11",
+   "air_peak": "2021-07-13",
+   "water_mwmt7": 15.452380952380953
+  },
+  {
+   "year": 2022,
+   "water_peak": "2022-11-05",
+   "air_peak": "2022-09-09",
+   "water_mwmt7": 13.801587301587302
+  },
+  {
+   "year": 2023,
+   "water_peak": "2023-12-23",
+   "air_peak": "2023-07-22",
+   "water_mwmt7": 11.357142857142858
+  },
+  {
+   "year": 2024,
+   "water_peak": "2024-05-14",
+   "air_peak": "2024-07-11",
+   "water_mwmt7": 12.166666666666668
+  }
+ ],
+ "n_peaks_before_sep30": 5,
+ "n_peaks_may": 5,
+ "storage_variants": {
+  "peak_minus_30d_mean": {
+   "n": 19,
+   "r_water_storage": -0.748,
+   "p_water_storage": 0.00023,
+   "slope_per_MAF_HC1": -0.985,
+   "slope_ci95_HC1": [
+    -1.377,
+    -0.592
+   ],
+   "r2_bivariate": 0.56,
+   "joint_air_p_HC1": 0.2026,
+   "air_partial_r_HC1": 0.304,
+   "joint_storage_p_HC1": 1.75e-06,
+   "r_air_storage": -0.102,
+   "p_air_storage": 0.678,
+   "interaction_coef_per_MAF_per_degC": 0.0333,
+   "interaction_p_HC1": 0.8807,
+   "interaction_ci95": [
+    -0.4013,
+    0.4679
+   ],
+   "leave_one_out_r_range": [
+    -0.802,
+    -0.724
+   ]
+  },
+  "jun30": {
+   "n": 19,
+   "r_water_storage": -0.919,
+   "p_water_storage": 2.68e-08,
+   "slope_per_MAF_HC1": -1.331,
+   "slope_ci95_HC1": [
+    -1.699,
+    -0.963
+   ],
+   "r2_bivariate": 0.845,
+   "joint_air_p_HC1": 0.7915,
+   "air_partial_r_HC1": 0.066,
+   "joint_storage_p_HC1": 4.15e-11,
+   "r_air_storage": -0.233,
+   "p_air_storage": 0.336,
+   "interaction_coef_per_MAF_per_degC": 0.142,
+   "interaction_p_HC1": 0.4748,
+   "interaction_ci95": [
+    -0.2474,
+    0.5314
+   ],
+   "leave_one_out_r_range": [
+    -0.946,
+    -0.903
+   ]
+  },
+  "sep30_comparison_only": {
+   "n": 19,
+   "r_water_storage": -0.937,
+   "p_water_storage": 3.38e-09,
+   "slope_per_MAF_HC1": -1.575,
+   "slope_ci95_HC1": [
+    -1.907,
+    -1.243
+   ],
+   "r2_bivariate": 0.878,
+   "joint_air_p_HC1": 0.5566,
+   "air_partial_r_HC1": -0.145,
+   "joint_storage_p_HC1": 9.19e-17,
+   "r_air_storage": -0.281,
+   "p_air_storage": 0.244
+  }
+ },
+ "autocorrelation": {
+  "lag1_residual": -0.383,
+  "note": "reported descriptively; no conservativeness claim"
+ }
+}

@@ -1,0 +1,80 @@
+{
+ "Seyedhashemi": {
+  "doi": "10.1016/j.scitotenv.2020.142667",
+  "title": "Thermal signatures identify the influence of dams and ponds on stream temperatur",
+  "year": 2021,
+  "journal": "Science of The Total Environment"
+ },
+ "Toffolon": {
+  "doi": "10.1016/b978-0-12-821961-4.00002-6",
+  "title": "Outlier robust extreme learning machine: Predicting river water temperature in t",
+  "year": 2023,
+  "journal": "Handbook of Hydroinformatics"
+ },
+ "Piccolroaz_air2stream": {
+  "doi": "10.5194/hessd-10-2697-2013",
+  "title": "A simple lumped model to convert air temperature into surface water temperature ",
+  "year": 2013,
+  "journal": "?"
+ },
+ "Piotrowski": {
+  "doi": "10.1016/j.jhydrol.2019.02.035",
+  "title": "Simple modifications of the nonlinear regression stream temperature model for da",
+  "year": 2019,
+  "journal": "Journal of Hydrology"
+ },
+ "Olden": {
+  "doi": "10.1111/j.1365-2427.2009.02179.x",
+  "title": "Incorporating thermal regimes into environmental flows assessments: modifying da",
+  "year": 2009,
+  "journal": "Freshwater Biology"
+ },
+ "Null": {
+  "doi": "10.1007/s10584-012-0459-8",
+  "title": "Stream temperature sensitivity to climate warming in California\u2019s Sierra Nevada:",
+  "year": 2012,
+  "journal": "Climatic Change"
+ },
+ "Webb": {
+  "doi": "10.5194/hessd-4-2425-2007",
+  "title": "Importance of stream temperature to climate change impact on water quality",
+  "year": 2007,
+  "journal": "?"
+ },
+ "Preece": {
+  "doi": "10.3133/wri854171",
+  "title": "Water-quality appraisal of NASQAN stations below impoundments, eastern Tennessee",
+  "year": 1986,
+  "journal": "?"
+ },
+ "Michie": {
+  "doi": "10.3390/rs9111175",
+  "title": "Monitoring Thermal Pollution in Rivers Downstream of Dams with Landsat ETM+ Ther",
+  "year": 2017,
+  "journal": "Remote Sensing"
+ },
+ "Gray": {
+  "doi": "10.1002/rra.3453",
+  "title": "Mitigation of cold\u2010water thermal pollution downstream of a large dam with the us",
+  "year": 2019,
+  "journal": "River Research and Applications"
+ },
+ "Piccolroaz2018": {
+  "doi": "10.3390/w10081098",
+  "title": "Exploring and Quantifying River Thermal Response to Heatwaves",
+  "year": 2018,
+  "journal": "Water"
+ },
+ "Kedra": {
+  "doi": "10.1111/wej.12156",
+  "title": "Disturbance of water\u2010air temperature synchronisation by dam reservoirs",
+  "year": 2016,
+  "journal": "Water and Environment Journal"
+ },
+ "Gallice": {
+  "doi": "10.5194/hessd-12-4081-2015",
+  "title": "Stream temperature prediction in ungauged basins: review of recent approaches an",
+  "year": 2015,
+  "journal": "?"
+ }
+}
